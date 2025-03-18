@@ -53,7 +53,7 @@ Criar novos Remote Apps
 Altere ** Validation environment ** para **No**.
 Depois de concluído, selecione ** Next: Virtual Machines **.
 
-! [Esta imagem mostra onde você inserirá as informações do Host Pool.](.. /.. /Images/SolutionGuide/AVD/02-Hostpool_create_multisession_2.png "Criar página de Host Pool em pool")
+![Esta imagem mostra onde você inserirá as informações do Host Pool.](../Images/AVD/02-Hostpool_create_multisession_2.png "Criar página de Host Pool em pool")
 
 5. Navegue até ** Virtual Machines ** na parte superior e selecione **Yes** para adicionar novas máquinas virtuais ao Host Pools do AVD.
 
