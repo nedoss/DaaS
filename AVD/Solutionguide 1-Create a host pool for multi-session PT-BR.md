@@ -44,7 +44,7 @@ Criar novos Remote Apps
 
 3. Em Gerenciar, selecione **Host Pools** e selecione **+ Create**.
    
-! [Esta imagem mostra onde selecionar Host Pools em gerenciar e selecione adicionar para adicionar um novo Host Pool.](.. /Images/AVD/01-avdHostPool.png "Azure Virtual Desktop")
+![Esta imagem mostra onde selecionar Host Pools em gerenciar e selecione adicionar para adicionar um novo Host Pool.](../Images/AVD/01-avdHostPool.png "Azure Virtual Desktop")
 
 4. Na página Basics, consulte a captura de tela a seguir para preencher os campos obrigatórios. Selecione sua Assinatura, Resource Group e defina um nome de Hostpool. Como Localização, escolha **East US**. 
 
