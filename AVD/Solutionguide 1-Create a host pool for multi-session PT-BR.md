@@ -57,17 +57,19 @@ Depois de concluído, selecione ** Next: Virtual Machines **.
 
 5. Navegue até ** Virtual Machines ** na parte superior e selecione **Yes** para adicionar novas máquinas virtuais ao Host Pools do AVD.
 
-Selecione seu ** Resource group ** e insira um ** VM name prefix **, ele acrescentará automaticamente "-[número]" ao nome da VM. Siga os valores mostrados na imagem abaixo:
+Selecione seu ** Resource group ** e insira um **VM name prefix**, ele acrescentará automaticamente "-[número]" ao nome da VM. Siga os valores mostrados na imagem abaixo:
 
-! [Esta imagem mostra onde você inserirá as informações dos hosts da sessão do AVD.](.. /.. /Imagens/SolutionGuide/AVD/02-Hostpool_create_sessionhosts_2.png)
+![Esta imagem mostra onde você inserirá as informações dos hosts da sessão do AVD.](../Images/AVD/02-Hostpool_create_sessionhosts_2.png)
 
-! [Esta imagem mostra onde você inserirá as informações dos hosts da sessão do AVD.](.. /.. /Imagens/SolutionGuide/AVD/02-Hostpool_create_sessionhosts_3.png)
+![Esta imagem mostra onde você inserirá as informações dos hosts da sessão do AVD](../Images/AVD/02-Hostpool_create_sessionhosts_3.png)
 
-Na última etapa, insira suas credenciais de administrador local, ignore a configuração de URL personalizada e clique em ** Next: Workspace **.
+Na última etapa, insira suas credenciais de administrador local, ignore a configuração de URL personalizada e clique em **Next: Workspace**.
+
+![Esta imagem mostra onde você inserirá as informações dos hosts da sessão do AVD](../Images/AVD/02-Hostpool_create_sessionhosts_3.5.png)
  
 7. Na página Espaço de trabalho, selecione **Yes** para registrar um novo grupo de aplicativos da área de trabalho. Selecione **Create new** e forneça um **Workspace name**. Selecione **OK** e **Review + create**.
 
-! [Esta imagem mostra como, na guia criar um espaço de trabalho do Host Pools, insira as informações necessárias.](.. /.. /Images/SolutionGuide/AVD/02-hostpoolWorkspace.png "Criar uma guia de espaço de trabalho do Host Pool")
+![Esta imagem mostra como, na guia criar um espaço de trabalho do Host Pools, insira as informações necessárias.](../Images/AVD/02-hostpoolWorkspace.png "Criar uma guia de espaço de trabalho do Host Pool")
 
 8. Na página Criar um Host Pool, selecione **Create**.
 
@@ -88,39 +90,39 @@ Para conceder aos usuários acesso a VMs ingressadas no Azure AD, você deve [co
 
 Para disponibilizar apenas um único aplicativo para o usuário, em vez da área de trabalho completa, para que apenas o aplicativo seja renderizado no dispositivo host do qual você está trabalhando no momento, você precisa criar um grupo de aplicativos remotos. Siga as orientações:
 
-1. Navegue até a Área de Trabalho Virtual do Azure, selecione ** Application Groups** e clique em **Create**.
+1. Navegue até a Área de Trabalho Virtual do Azure, selecione **Application Groups** e clique em **Create**.
 
-! [Esta imagem mostra como criar um novo grupo de aplicativos.](.. /.. /Imagens/Guia_de_Soluções/AVD/02-Hostpool_RemoteApp-1.png)
+![Esta imagem mostra como criar um novo grupo de aplicativos.](../Images/AVD/02-Hostpool_RemoteApp-1.png)
 
 2. Na guia Basic, selecione seu **Resource Group**, seu AVD **Host Pools** e insira um **application group name**.
 
-! [Esta imagem mostra como criar um novo grupo de aplicativos.](.. /.. /Imagens/SolutionGuide/AVD/02-Hostpool_RemoteApp-2.png)
+![Esta imagem mostra como criar um novo grupo de aplicativos.](../Images/AVD/02-Hostpool_RemoteApp-2.png)
 
 Clique em **Next: Applications**
 
 2. Em seguida, selecione o aplicativo que deseja adicionar ao seu application group e clique em **Add applications**.
 
-! [Esta imagem mostra como adicionar um aplicativo ao grupo de aplicativos.](.. /.. /Imagens/SolutionGuide/AVD/03-Hostpool_RemoteApp-1.png)
+![Esta imagem mostra como adicionar um aplicativo ao grupo de aplicativos.](../Images/AVD/03-Hostpool_RemoteApp-1.png)
 
 Em seguida, selecione **Start menu** como a origem do aplicativo e **Microsoft Edge** (por exemplo) como o aplicativo .
 
-! [Esta imagem mostra como adicionar um aplicativo ao grupo de aplicativos.](.. /.. /Imagens/SolutionGuide/AVD/03-Hostpool_RemoteApp-4.png)
+![Esta imagem mostra como adicionar um aplicativo ao grupo de aplicativos.](../Images/AVD/03-Hostpool_RemoteApp-4.png)
 
 Clique em **Review + add**, depois em **Add** e adicione outro aplicativo no menu Iniciar como a origem do aplicativo.
 
-! [Esta imagem mostra como adicionar um aplicativo ao grupo de aplicativos.](.. /.. /Imagens/SolutionGuide/AVD/03-Hostpool_RemoteApp-5.png)
+![Esta imagem mostra como adicionar um aplicativo ao grupo de aplicativos.](../Images/AVD/03-Hostpool_RemoteApp-5.png)
 
 Clique em **Next: Assignments**.
 
 3. Atribua o grupo Usuários do AVD ao Application group que deve ter acesso aos RemoteApps.
 
-! [Esta imagem mostra como atribuir um grupo de usuários ao grupo de aplicativos.](.. /.. /Imagens/SolutionGuide/AVD/03-Hostpool_RemoteApp-2.png)
+![Esta imagem mostra como atribuir um grupo de usuários ao grupo de aplicativos.](../Images/AVD/03-Hostpool_RemoteApp-2.png)
 
 Clique em **Next: Workspace**
 
 4. Alterne **Register Application Group** para sim e clique em **Review + create**.
 
-! [Esta imagem mostra como atribuir um grupo de usuários ao grupo de aplicativos.](.. /.. /Imagens/SolutionGuide/AVD/02-Hostpool_RemoteApp-2-1.png)
+![Esta imagem mostra como atribuir um grupo de usuários ao grupo de aplicativos.](../Images/AVD/02-Hostpool_RemoteApp-2-1.png)
 
 > Se outro application group no Host Pool do AVD já tiver sido registrado, esse grupo de aplicativos também será registrado no mesmo workspace.
 
