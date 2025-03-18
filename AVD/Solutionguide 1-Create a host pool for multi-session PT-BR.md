@@ -120,7 +120,7 @@ Clique em **Next: Assignments**.
 
 Clique em **Next: Workspace**
 
-4. Alterne **Register Application Group** para sim e clique em **Review + create**.
+4. Alterne **Register Application Group** para **Yes** e clique em **Review + create**.
 
 ![Esta imagem mostra como atribuir um grupo de usuários ao grupo de aplicativos.](../Images/AVD/02-Hostpool_RemoteApp-2-1.png)
 
