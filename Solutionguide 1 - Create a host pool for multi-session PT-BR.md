@@ -1,4 +1,4 @@
-# Guia de solução 1: Criar um Host Pool para várias sessões
+# Guia de solução 1: Criar um Host Pool para Multi-Session
 
 Neste desafio, você criará pooled desktops ingressadas no Azure AD a partir de uma Imagem Multi-Session do Microsoft Windows 11. Após a implantação, você se conectará a esse host de sessão com o cliente de Área de Trabalho Remota nativo ou Web. 
 
@@ -11,9 +11,9 @@ Crie um hostpool Multi-Session do AVD ingressado no Microsoft Entra ID:
 - Criar Session Host Configuration: **Não**
 - Tipo de host pool: **Pooled**
 - Família de computação: **Standard D2as v5**
-- Escolha a Imagem da Galeria ** Windows 11 Enterprise multi-session Version + Microsoft 365 Apps** 
-- Domínio a ser ingressado: ** Microsoft Entra ID (Enroll with Intune "No") **
-- Registre desktop app group no ** new workspace **
+- Escolha a Imagem da Galeria **Windows 11 Enterprise multi-session Version + Microsoft 365 Apps** 
+- Domínio a ser ingressado: **Microsoft Entra ID (Enroll with Intune "No")**
+- Registre desktop app group no **new workspace**
 - Atribuir usuários
 - Habilitar Microsoft Entra ID single sign on: " Connections will use Microsoft Entra authentication to provide single sign-on. ".
 
@@ -40,7 +40,7 @@ Criar novos Remote Apps
 
 1. Entre no [Portal do Azure](https://portal.azure.com/).
 
-2. Pesquise ** Azure Virtual Desktop ** e selecione-a na lista.
+2. Pesquise **Azure Virtual Desktop** e selecione-a na lista.
 
 3. Em Gerenciar, selecione **Host Pools** e selecione **+ Create**.
    
@@ -65,7 +65,7 @@ Selecione seu ** Resource group ** e insira um ** VM name prefix **, ele acresce
 
 Na última etapa, insira suas credenciais de administrador local, ignore a configuração de URL personalizada e clique em ** Next: Workspace **.
  
-7. Na página Espaço de trabalho, selecione **Yes** para registrar um novo grupo de aplicativos da área de trabalho. Selecione ** Create new ** e forneça um ** Workspace name **. Selecione **OK** e ** Review + create **.
+7. Na página Espaço de trabalho, selecione **Yes** para registrar um novo grupo de aplicativos da área de trabalho. Selecione **Create new** e forneça um **Workspace name**. Selecione **OK** e **Review + create**.
 
 ! [Esta imagem mostra como, na guia criar um espaço de trabalho do Host Pools, insira as informações necessárias.](.. /.. /Images/SolutionGuide/AVD/02-hostpoolWorkspace.png "Criar uma guia de espaço de trabalho do Host Pool")
 
@@ -92,7 +92,7 @@ Para disponibilizar apenas um único aplicativo para o usuário, em vez da área
 
 ! [Esta imagem mostra como criar um novo grupo de aplicativos.](.. /.. /Imagens/Guia_de_Soluções/AVD/02-Hostpool_RemoteApp-1.png)
 
-2. Na guia Basic, selecione seu ** resource group **, seu AVD **Host Pools** e insira um ** application group name**.
+2. Na guia Basic, selecione seu **Resource Group**, seu AVD **Host Pools** e insira um **application group name**.
 
 ! [Esta imagem mostra como criar um novo grupo de aplicativos.](.. /.. /Imagens/SolutionGuide/AVD/02-Hostpool_RemoteApp-2.png)
 
