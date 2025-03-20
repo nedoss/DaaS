@@ -60,7 +60,7 @@ You can check to make sure the RDP property was added by running the following c
 Get-AzWvdHostPool -ResourceGroupName <resourcegroupname> -Name <hostpoolname> | format-list Name, CustomRdpProperty
 ```
 
-Desafio 3: **[Habilitar FSLogix Profile Container](<AVD/Solutionguide 3-AVD-FSLogix - PT-BR.md>)**
+Desafio 3: **[Habilitar FSLogix Profile Container](<Solutionguide 3-AVD-FSLogix - PT-BR.md>)**
 
 ## Recursos de Aprendizagem
 - [Personalizar propriedades RDP](https://learn.microsoft.com/en-us/azure/virtual-desktop/customize-rdp-properties)
