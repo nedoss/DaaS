@@ -146,7 +146,7 @@ Na última etapa, clique em **Next** e **Create**.
 
 Em seguida, você deve ver em **All Cloud PCs** que o provisionamento do PC na nuvem foi iniciado para seu grupo de usuários. 
 
-![W365 Provisioning policy](Images/W365/01-W365-Provisioning-6.png)
+![W365 Provisioning policy](../Images/W365/01-W365-Provisioning-6.png)
 
 > **Observação**: o provisionamento de um PC na nuvem leva cerca de 25 a 35 minutos e depende da configuração atual da fila, região e idioma.
 
