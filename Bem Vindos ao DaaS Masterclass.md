@@ -1,7 +1,7 @@
 ![Bem Vindos ao DaaS](Images/newheader.png)
 # DaaS Master Class
 
-Esta masterclass foi projetada para ajudá-lo a obter experiência prática com o Windows 365 (W365), Azure Virtual Desktop (AVD) e Microsoft Dev Box (DevBox).
+Esta masterclass foi projetada para ajudá-lo a obter experiência prática com o Windows 365 (W365), Azure Virtual Desktop (AVD).
 
 W365 - é um serviço baseado em nuvem que cria automaticamente um novo tipo de máquina virtual Windows (Cloud PCs) para seus usuários finais. Cada Cloud PC é atribuído a um usuário individual e é seu dispositivo Windows dedicado. O Windows 365 oferece os benefícios de produtividade, segurança e colaboração do Microsoft 365.
 
