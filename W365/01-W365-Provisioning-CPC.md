@@ -40,7 +40,7 @@ Você pode atribuir as licenças necessárias na visão geral do usuário em **L
 
 Selecione **Microsoft 365 E5 EEA (without Teams)** para licenciar os aplicativos do Microsoft 365 Office e o Microsoft Intune. Além disso, selecione a  licença **Windows 365 Enterprise 2 vCPU, 8 GB, 128 GB**. 
 
-![M365 Admin Center - User license assignment](Images/W365/01-W365-License-Assignment-2.png)
+![M365 Admin Center - User license assignment](../Images/W365/01-W365-License-Assignment-2.png)
 
 E clique em **Save changes**.
 
