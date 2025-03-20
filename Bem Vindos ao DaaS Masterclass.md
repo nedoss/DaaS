@@ -26,11 +26,11 @@ Você terminará esta Masterclass com o entendimento e as habilidades necessári
 
 1. Não abuse do poder de Direitos de Administrador para sabotar ou manipular outros participantes e seus recursos.  
 2. Você receberá suas credenciais de Administrador e Usuário pessoalmente, cuide bem delas.  
-3. Nomeie todos os seus recursos com **PUNK[count]**, por exemplo, PUNK1.  
+3. Nomeie todos os seus recursos com **TEAM[count]**, por exemplo, TEAM1.  
 
 ## O ambiente
 
-Esta é a arquitetura da Masterclass de W365, AVD e DevBox:
+Esta é a arquitetura da Masterclass de W365 e AVD:
 
 ![Esta imagem mostra a arquitetura da Masterclass](Images/DaaS-accelerator-baseline-architecture.png)
 
