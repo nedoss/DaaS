@@ -15,7 +15,7 @@ Crie um hostpool Multi-Session do AVD ingressado no Microsoft Entra ID:
 - Domínio a ser ingressado: **Microsoft Entra ID (Enroll with Intune "No")**
 - Registre desktop app group no **new workspace**
 - Atribuir usuários
-- Habilitar Microsoft Entra ID single sign on: " Connections will use Microsoft Entra authentication to provide single sign-on. ".
+- Habilitar Microsoft Entra ID single sign on: **"Connections will use Microsoft Entra authentication to provide single sign-on."**.
 
 Faça login no session host
 - Faça login como usuário e verifique se o sistema operacional é uma sessão multi-session
