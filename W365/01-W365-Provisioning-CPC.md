@@ -1,83 +1,87 @@
-# Solutionguide 1: Provision a Cloud PC
+# Guia de solução 1: Provisionar um PC na nuvem
 
-## Challenge
+## Desafio
 
-You have purchased one Windows 365 licenses. At this point, you can start with the provisioning of Cloud PCs.
+Você comprou uma licença do Windows 365. Neste ponto, você pode começar com o provisionamento de PCs na nuvem.
 
-To set up your system to provision on-demand Cloud PCs for you, you need to:
+Para configurar seu sistema para provisionar PCs na nuvem sob demanda para você, você precisa:
 
-- An Entra ID group with **GRP-P[count]-Users**, e.g. GRP-P1-Users, is already created.
-- Assign licenses to your user or group.
-- Your User should have local admin rights for his Cloud PC.
-- Your Cloud PC is using the Microsoft Hosted Networks.
-- Create a provisioning policy.
-- **Make sure your Cloud PC has a custom name that is not the default, for example: CPC-P1-%RAND:5%"**
+- Um grupo de ID do Entra com **GRP-P[count]-Users**, por exemplo, GRP-P1-Users, já está criado.
+- Atribua licenças ao seu usuário ou grupo.
+- Seu usuário deve ter direitos de administrador local para seu PC na nuvem.
+- Seu PC na nuvem está usando as redes hospedadas da Microsoft.
+- Crie uma política de provisionamento.
+- **Certifique-se de que seu PC na nuvem tenha um nome personalizado que não seja o padrão, por exemplo: CPC-P1-%RAND:5%"**
 
-## Success Criteria
-1.  A Windows365 & Intune License is automatically assigned to your users.
-2.  Your User has local admin rights.
-3.  A provisioning policy with **PP-P[count]-YourPolicyName** is created.
-4.  A Cloud PC deployment is running.
 
-## Step 1 - License assignment
+## Critério de Sucesso
+1. Uma licença do Windows365 e do Intune é atribuída automaticamente aos seus usuários.
+2. Seu usuário tem direitos de administrador local.
+3. Uma política de provisionamento com **PP-P[count]-YourPolicyName** é criada.
+4. Uma implantação de PC na nuvem está em execução.
 
-Sign in to the [M365 Admin Center](https://admin.microsoft.com) with an account that has enough permissions to manage licenses, e.g. with the License Admin role. 
 
-You can find more information about M365 administrator roles [here.](https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide)
+## Passo 1 - Atribuição de licença
 
-There are two options for assigning licenses to users. 
+Inicie sessão no [Centro de administração do M365](https://admin.microsoft.com) com uma conta que tenha permissões suficientes para gerir licenças, por exemplo, com a função de administrador de licenças. 
 
-###  [Option 1] - Per User Assignment
+Você pode encontrar mais informações sobre as funções de administrador do M365 [aqui.](https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide)
 
-The first option is to assign per user. To do this, you need to select **Users** and then **Active users** to get the list of all active users. Then search for your user, e.g. **Punk1**, and select **User, Punk1**. 
+Há duas opções para atribuir licenças aos usuários. 
 
-![M365 Admin Center - Active Users](../../Images/SolutionGuide/W365/01-W365-License-Assignment-1.png)
 
-You can assign the required licenses in the user overview under **Licenses and apps**. 
+### [Opção 1] - Por atribuição de usuário
 
-Select **Microsoft 365 E5 EEA (without Teams)** to license the Microsoft 365 Office applications and Microsoft Intune. Additionally select the **Windows 365 Enterprise 2 vCPU, 8 GB, 128 GB** license. 
+A primeira opção é atribuir por usuário. Para fazer isso, você precisa selecionar **Users** e, em seguida, **Active Users** para obter a lista de todos os usuários ativos. Em seguida, procure seu usuário, por exemplo, **Punk1**, e selecione **User, Punk1**. 
 
-![M365 Admin Center - User license assignment](../../Images/SolutionGuide/W365/01-W365-License-Assignment-2.png)
+![M365 Admin Center - Active Users](../Images/W365/01-W365-License-Assignment-1.png)
 
-And click **Save changes**.
+Você pode atribuir as licenças necessárias na visão geral do usuário em **Licenses and apps**. 
 
-### [Option 2] - Per Group Assignment
+Selecione **Microsoft 365 E5 EEA (without Teams)** para licenciar os aplicativos do Microsoft 365 Office e o Microsoft Intune. Além disso, selecione a  licença **Windows 365 Enterprise 2 vCPU, 8 GB, 128 GB**. 
 
-Another option is to assign licenses per group. To do this, you must select **Billing** and then **Licenses**. Under **Subscriptions** you should find all available licenses. Then click on **Windows 365 Enterprise 2 vCPU, 8 GB, 128 GB**. 
+![M365 Admin Center - User license assignment](Images/W365/01-W365-License-Assignment-2.png)
 
-![M365 Admin Center - Billing - Licenses](../../Images/SolutionGuide/W365/01-W365-License-Assignment-3.png)
+E clique em **Save changes**.
 
-Select **Group** and then **+ Assign licenses**. 
+### [Opção 2] - Por Group Assignment
 
-> **Note:** Here it is also possible to select users in order to assign a license to a specific user account.    
+Outra opção é atribuir licenças por grupo. Para fazer isso, você deve selecionar **Billing** e depois **Licenses**. Em **Subscriptions** você deve encontrar todas as licenças disponíveis. Em seguida, clique em **Windows 365 Enterprise 2 vCPU, 8 GB, 128 GB**. 
 
-![M365 Admin Center - W365 License](../../Images/SolutionGuide/W365/01-W365-License-Assignment-4.png)
+![M365 Admin Center - Billing - Licenses](Images/W365/01-W365-License-Assignment-3.png)
 
-Next, search for your user group, e.g. **GRP-P1-Users**, and click **Assign**.
+Selecione **Group** e, em seguida, **+ Assign licenses**. 
 
-![M365 Admin Center - W365 Group license assignment](../../Images/SolutionGuide/W365/01-W365-License-Assignment-5.png)
+> **Nota:** Aqui também é possível selecionar usuários para atribuir uma licença a uma conta de usuário específica.    
 
-Repeat the previous step to assign the Microsoft 365 E5 licenses to your user group as well. 
+![M365 Admin Center - W365 License](Images/W365/01-W365-License-Assignment-4.png)
 
-## Step 2 - Configure user settings
+Em seguida, procure seu grupo de usuários, por exemplo, **GRP-P1-Users**, e clique em **Assign**.
 
-With user settings you can determine if a user needs to get local admin rights or not. You can also configure if you want to offer the user a point-in-time restore service where snapshots of the Cloud PC are created in the frequency you configure. User settings policies are published to Microsoft Entra ID groups and you can create different User settings policies for different groups of users.
+![M365 Admin Center - W365 Group license assignment](Images/W365/01-W365-License-Assignment-5.png)
 
-Sign in to the [Microsoft Intune](https://intune.microsoft.com/) and navigate to **Devices** then **Windows 365** to access the Windows 365 management panel. 
+Repita a etapa anterior para atribuir as licenças do Microsoft 365 E5 ao seu grupo de usuários também.
 
-![M365 Admin Center - W365 Group license assignment](../../Images/SolutionGuide/W365/01-W365-UserSettings-1.png)
+## Etapa 2 - Definir as configurações do usuário
 
-Next click **User settings**. 
+Com as configurações do usuário, você pode determinar se um usuário precisa obter direitos de administrador local ou não. Você também pode configurar se deseja oferecer ao usuário um serviço de restauração pontual em que os instantâneos do PC na nuvem são criados na frequência configurada. As políticas de configurações do usuário são publicadas em grupos de ID do Microsoft Entra e você pode criar diferentes políticas de configurações do usuário para diferentes grupos de usuários.
 
-![M365 Admin Center - W365 Group license assignment](../../Images/SolutionGuide/W365/01-W365-UserSettings-2.png)
 
-Select **+ Create** to create a new user settings configuration.
+Entre no [Microsoft Intune](https://intune.microsoft.com/) e navegue até **Devices** e **Windows 365** ** para acessar o painel de gerenciamento do Windows 365. 
 
-![M365 Admin Center - W365 Group license assignment](../../Images/SolutionGuide/W365/01-W365-UserSettings-3.png)
+![M365 Admin Center - W365 Group license assignment](Images/W365/01-W365-UserSettings-1.png)
 
-On the **Settings** tab, make the following settings:
+Em seguida, clique em **User settings**. 
 
-| Setting         | Value    | 
+![M365 Admin Center - W365 Group license assignment](Images/W365/01-W365-UserSettings-2.png)
+
+Selecione **+ Create** para criar uma nova configuração de configurações do usuário.
+
+![M365 Admin Center - W365 Group license assignment](Images/W365/01-W365-UserSettings-3.png)
+
+Na guia **Settings**, faça as seguintes configurações:
+
+| Configuração | Valor | 
 |--------------|-----------|
 | Name | Select a name for your user setting, e.g. **UserSettings-P1**      |
 | Enable Local admin     | **Enabled** |
@@ -85,27 +89,27 @@ On the **Settings** tab, make the following settings:
 | Allow user to initiate restore service    | **Enabled** |
 | Frequency of restore-point service    | **12 hours** |
 
-Then click **Next**.
+Em seguida, clique em **Next**.
 
-![M365 Admin Center - W365 Group license assignment](../../Images/SolutionGuide/W365/01-W365-UserSettings-4.png)
+![M365 Admin Center - W365 Group license assignment](Images/W365/01-W365-UserSettings-4.png)
 
-On the **Assignments** tab, select the **Add groups** option and search for your user group, e.g. **GRP-P1 users** and click **Select**.
+Na  guia **Assignments**, selecione a  opção **Add groups** e pesquise seu grupo de usuários, por exemplo, **GRP-P1 users** e clique em **Select**.
 
-![M365 Admin Center - W365 Group license assignment](../../Images/SolutionGuide/W365/01-W365-UserSettings-5.png)
+![M365 Admin Center - W365 Group license assignment](Images/W365/01-W365-UserSettings-5.png)
 
-Then click **Next** and **Create**. 
+Em seguida, clique em **Next** e **Create**. 
 
-## Step 3 - Create a Provisioning Policy
+## Etapa 3 - Criar uma política de provisionamento
 
-To provision a Cloud PC a Provisioning Policy needs to be created. You can create multiple Provisioning policies and assign them to different **Entra ID groups**.
+Para provisionar um PC na nuvem, uma política de provisionamento precisa ser criada. Você pode criar várias políticas de provisionamento e atribuí-las a diferentes grupos do **Entra ID groups**.
 
-In the **Windows 365 management panal** select **Provisioning Policy** and select **+ Create policy**.
+No **Windows 365 management panal**, selecione **Provisioning Policy** e selecione **+ Create policy**.
 
-![W365 Provisioning policy](../../Images/SolutionGuide/W365/01-W365-Provisioning-1.png)
+![W365 Provisioning policy](Images/W365/01-W365-Provisioning-1.png)
 
-On the **Settings** tab, make the following settings:
+Na  guia **Settings**, faça as seguintes configurações:
 
-| Setting         | Value    | Note |
+| Configuração | Valor | Observação |
 |--------------|-----------|-----------|
 | Name | Select a name for your provisioning policy, e.g. **PP-P1-CPC-ENGLISCH**      |
 | License type    | **Enterprise** |
@@ -114,50 +118,50 @@ On the **Settings** tab, make the following settings:
 | Geography  | **Germany** | You can also select **European Union**. |
 | Use Microsoft Entra single sign-on | **Enabled** |
 
-![W365 Provisioning policy](../../Images/SolutionGuide/W365/01-W365-Provisioning-2.png)
+![W365 Provisioning policy](Images/W365/01-W365-Provisioning-2.png)
 
-And then click **Next**.
+Em seguida, clique em **Next**.
 
-Select an image from the **Gallery image**. When you choose Gallery image you have the choice for Windows 10 or 11, with or without the Microsoft 365 apps and the version/build.
+Selecione uma imagem da **Gallery image**. Ao escolher a imagem da Galeria, você tem a opção de Windows 10 ou 11, com ou sem os aplicativos do Microsoft 365 e a versão/compilação.
 
-Select the **latest Windows 11 Enterprise + Microsoft 365** image and click **Next**
+Selecione a **latest Windows 11 Enterprise + Microsoft 365** e clique em **Next**.
 
-![W365 Provisioning policy](../../Images/SolutionGuide/W365/01-W365-Provisioning-3.png)
+![W365 Provisioning policy](Images/W365/01-W365-Provisioning-3.png)
 
-On the **Configuration** tab, under **Language & Region**, you can change the default language of your Cloud PCs during the provisioning process. This can be manually (via Windows update policies in Microsoft Intune) or via the Autopatch service.
+Na  guia **Configuration**, em **Language & Region**, você pode alterar o idioma padrão de seus PCs na nuvem durante o processo de provisionamento. Isso pode ser manualmente (por meio de políticas de atualização do Windows no Microsoft Intune) ou por meio do serviço Autopatch.
 
->**Note**: If you select a language pack other than English, the provisioning of Cloud PCs will take longer. 
+>**Observação**: se você selecionar um pacote de idiomas diferente do inglês, o provisionamento de PCs na nuvem levará mais tempo.
 
-Under **Cloud PC naming** please activate the option **Apply device name template** so that you can use an individual Cloud PC device name for your users. Enter a **name template**, e.g. **CPC-P1-%RAND:5%**.
+Em **Cloud PC naming** , ative a opção **Apply device name template** para que você possa usar um nome de dispositivo de PC na nuvem individual para seus usuários. Insira um **name template**, por exemplo, **CPC-P1-%RAND:5%**.
 
-For additional services select **None** and click **Next**.
+Para serviços adicionais, selecione **None** e clique em **Next**.
 
-![W365 Provisioning policy](../../Images/SolutionGuide/W365/01-W365-Provisioning-4.png)
+![W365 Provisioning policy](Images/W365/01-W365-Provisioning-4.png)
 
-You can skip the **Scope tags** tab and continue with the **Assignments** user group. Click **Add groups** and search for your user group, e.g. **GRP-P1-Users** and click **select**. 
+Você pode ignorar a  guia **Scope tags** e continuar com o user group **Assignments**. Clique em **Add groups** e pesquise seu grupo de usuários, por exemplo, **GRP-P1-Users** e clique em **select**. 
 
-![W365 Provisioning policy](../../Images/SolutionGuide/W365/01-W365-Provisioning-5.png)
+![W365 Provisioning policy](Images/W365/01-W365-Provisioning-5.png)
 
-In the last step, click on **Next** and **Create**. 
+Na última etapa, clique em **Next** e **Create**. 
 
-You should then see under **All Cloud PCs** that the provisioning of the Cloud PC has been started for your user group. 
+Em seguida, você deve ver em **All Cloud PCs** que o provisionamento do PC na nuvem foi iniciado para seu grupo de usuários. 
 
-![W365 Provisioning policy](../../Images/SolutionGuide/W365/01-W365-Provisioning-6.png)
+![W365 Provisioning policy](Images/W365/01-W365-Provisioning-6.png)
 
-> **Note**: Provisioning a Cloud PC takes around 25-35 minutes and depends on the current queue, region and language configuration.
+> **Observação**: o provisionamento de um PC na nuvem leva cerca de 25 a 35 minutos e depende da configuração atual da fila, região e idioma.
 
-## Step 4 - Connect to your Cloud PC
+## Etapa 4 - Conecte-se ao seu PC na nuvem
 
-Let's connect to the Windows 365 Cloud PC.
+Vamos nos conectar ao Windows 365 Cloud PC.
 
-Open the [**Windows App Web client**](https://windows365.microsoft.com/ent) or use the **Windows App** and open the **Microsoft Store** and search for **Windows App**. If the Microsoft Store is blocked then you can use the [Windows App offline installer](https://go.microsoft.com/fwlink/?linkid=2262633) 
+Abra o [**Windows App Web client**](https://windows365.microsoft.com/ent) ou use o **Windows App** e abra a **Microsoft Store** e procure por **Windows App**. Se a Microsoft Store estiver bloqueada, você poderá usar o [Windows App offline installer](https://go.microsoft.com/fwlink/?linkid=2262633) 
 
-Log in with your user and you should see your Cloud PC under **Devices** and click **Connect** to connect to your Cloud PC.  
+Faça login com seu usuário e você verá seu PC na nuvem em **Devices** e clique em **Connect** para se conectar ao seu PC na nuvem.   
 
-![W365 Windows App Web Client](../../Images/SolutionGuide/W365/01-W365-WindowsApp-1.png)
+![W365 Windows App Web Client](Images/W365/01-W365-WindowsApp-1.png)
 
 
-## Learning Resources
+## Recursos de Aprendizagem
 - [Deployment overview](https://learn.microsoft.com/en-us/windows-365/enterprise/deployment-overview)
 - [User settings](https://learn.microsoft.com/en-us/windows-365/enterprise/assign-users-as-local-admin)
 - [Create a provisioning policy](https://learn.microsoft.com/en-us/windows-365/enterprise/create-provisioning-policy)
