@@ -19,7 +19,7 @@
 
 No pooled / multi-session Host pool (RemoteApp), navegue até **Propriedades RDP**.
 
-! [Propriedade RDP](.. /.. /Imagens/SolutionGuide/AVD/03-RDPProperty_1.png)
+![Propriedade RDP](../Images/AVD/03-RDPProperty_1.png)
  
 Em seguida, configure as seguintes propriedades RDP.
 
@@ -29,7 +29,7 @@ Display settings:
  | Multiple displays | **Enable multiple display support** |
  | Smart sizing | **The local window content will scale when resized** |
 
-! [Propriedade RDP](.. /.. /Imagens/SolutionGuide/AVD/03-RDPProperty_2.png)
+![Propriedade RDP](../Images/AVD/03-RDPProperty_2.png)
 
 Device redirection:
  | RDP Property | Value |
@@ -41,7 +41,7 @@ Device redirection:
  | Printer Redirection | **The printers on the local computer are not available in the remote session** |
  | USB device redirection | **Don't redirect any USB devices** |
 
-! [Propriedade RDP](.. /.. /Imagens/SolutionGuide/AVD/03-RDPProperty_3.png)
+![Propriedade RDP](../Images/AVD/03-RDPProperty_3.png)
 
 Em seguida, clique em **Save**.
  
