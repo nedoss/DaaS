@@ -1,68 +1,72 @@
-# Solutionguide 2: Configure RDP Properties
+# Guia de solução 2: Configurar propriedades RDP
 
-## Introduction
+## Introdução
 
-For **security** reasons, you want to override the default and block some devices from being redirected.
+Por  motivos de **segurança**, você deseja substituir o padrão e impedir que alguns dispositivos sejam redirecionados.
 
-## Challenge
+## Desafio
 
-Your Security Team want to **prevent** that a user can **Copy & Paste** data from their local client to the Cloud PC.
-In addition no local drive should be available in the remote session.
+Sua equipe de segurança deseja **evitar** que um usuário possa **copiar e colar** dados de seu cliente local para o PC na nuvem.
+Além disso, nenhuma unidade local deve estar disponível na sessão remota.
 
-## Success Criteria
 
-1. A new dynamic group with **your** Cloud PC is configured.
-2. A new device configuration policy is created for your Cloud PC and **Copy & Paste** is not possible and **local drives** are **not** redirected.
+## Critério de Sucesso
 
-## Step 1 - Configure your dynamic group for your Cloud PCs (Devices)
+1. Um novo grupo dinâmico com **seu** PC na nuvem está configurado.
+2. Uma nova política de configuração de dispositivo é criada para o seu PC na nuvem e **Copiar e colar** não é possível e **as unidades locais** não são redirecionadas.
 
-Open the Microsoft Intune Admin Center [https://in.cmd.ms/](https://in.cmd.ms/) and select **Groups** to view all Microsoft Entra ID groups. 
 
-Then search for **Devices** (search mode should be enabled) and select your user device group.
+### Etapa 1 - Configurar seu grupo dinâmico para seus PCs na nuvem (dispositivos)
 
-![029-group.png](../../Images/SolutionGuide/W365/02-RDPSettings-Group-1.png)
+Abra o Microsoft Intune Admin Center [https://in.cmd.ms/](https://in.cmd.ms/) e selecione **Groups** para exibir todos os grupos de ID do Microsoft Entra. 
 
-Next, select **Dynamic Membership Rules** and add a new rule or modify the existing rule to include all devices with the display name that you have configured in the W365 provisioning profile. And then **Save**. 
+Em seguida, procure por **Dispositivos** (o modo de pesquisa deve estar ativado) e selecione seu grupo de dispositivos de usuário.
 
-![030-group.png](../../Images/SolutionGuide/W365/02-RDPSettings-Group-2.png)
+![RDPSettings-Group](../Images/W365/02-RDPSettings-1.png)
+
+Em seguida, selecione **Dynamic Membership Rules** e adicione uma nova regra ou modifique a regra existente para incluir todos os dispositivos com o nome de exibição que você configurou no perfil de provisionamento do W365. E então **Save**. 
+
+![030-group.png](../Images/W365/02-RDPSettings-2.png)
 
 Lastly, you need to check that the processing status of the dynamic rule is not "Paused", otherwise you need to change the processing pause value from **Yes to No**.
+Por fim, você precisa verificar se o status de processamento da regra dinâmica não está "Paused", caso contrário, você precisa alterar o valor da pausa de processamento de **Yes para No**.
 
-![030-group.png](../../Images/SolutionGuide/W365/02-RDPSettings-Group-3.png)
+![030-group.png](../Images/W365/02-RDPSettings-3.png)
 
-## Step 2 - Configure an Intune Device Configuration Profile for the RDP Settings
+## Etapa 2 – Configurar um perfil de configuração de dispositivo Intune para as configurações de RDP
 
-First open the **Devices** tab and select **Configuration profiles** then **Create profile** to create a new Intune Device Configuration Profile.
+Primeiro, abra a  guia **Devices** e selecione **Configuration profiles** e, em seguida, **Create profile** para criar um novo Perfil de Configuração de Dispositivo do Intune.
 
-![RDPSettings-1.png](../../Images/SolutionGuide/W365/02-RDPSettings-1.png)
+![RDPSettings-1.png](../Images/W365/02-RDPSettings-1.png)
 
-Select **Windows 10 and later** as Platform and **Settings catalog** as Profile type and click **Create**.
+Selecione **Windows 10 and later** como Plataforma e **Settings catalog** como Tipo de perfil e clique em **Create**.
 
-![RDPSettings-2.png](../../Images/SolutionGuide/W365/02-RDPSettings-2.png)
+![RDPSettings-2.png](../Images/W365/02-RDPSettings-2.png)
 
-Enter your configuration profile name **CP-%PUNK%-TEXT**, e.g. CP-P1-RDP-Restrictions and click **Next**.
+Insira o nome do seu perfil de configuração **CP-%PUNK%-TEXT**, por exemplo, CP-P1-RDP-Restrictions e clique em **Next**.
 
-![RDPSettings-3.png](../../Images/SolutionGuide/W365/02-RDPSettings-3.png)
+![RDPSettings-3.png](../Images/W365/02-RDPSettings-3.png)
 
-Click **+ Add settings** to add settings to your configuration profile. 
+Clique em **+ Add settings** para adicionar configurações ao seu perfil de configuração. 
 
-![RDPSettings-4.png](../../Images/SolutionGuide/W365/02-RDPSettings-4.png)
+![RDPSettings-4.png](../Images/W365/02-RDPSettings-4.png)
 
-Next, search for **Remote Desktop** and open the catagory with **...\Device and Resource Redirection** then select **Do no allow Clipboard redirection** and **Do not allow drive redirection**.
+Em seguida, procure por **Remote Desktop** e abra a categoria com **...\Device and Resource Redirection** e selecione **Do no allow Clipboard redirection** e **Do not allow drive redirection**.
 
-After that you can close the settings picker.
+Depois disso, você pode fechar o seletor de configurações.
 
-![RDPSettings-5.png](../../Images/SolutionGuide/W365/02-RDPSettings-5.png)
+![RDPSettings-5.png](../Images/W365/02-RDPSettings-5.png)
 
-On the Configuration Settings tab, you must enable both RDP settings and click **Next**.
+Na Aba Configuration Settings, você deve habilitar as duas configurações de RDP e clicar em **Next**.
 
-![RDPSettings-6.png](../../Images/SolutionGuide/W365/02-RDPSettings-6.png)
+![RDPSettings-6.png](../Images/W365/02-RDPSettings-6.png)
 
-The Scope Tags tab can be skipped, but the Assignment tab is important. Here you need to **Add Groups** add your specific Cloud PC device group, e.g. GRP-P1 devices.
+A guia cope Tags pode ser ignorada, mas a guia Assignment é importante. Aqui você precisa clicar em **Add Groups**  para adicionar seu grupo específico de dispositivos Cloud PC, por exemplo, dispositivos GRP-P1.
 
-Click **Next** and then **Create**.
 
-![RDPSettings-7.png](../../Images/SolutionGuide/W365/02-RDPSettings-7.png)
+Clique em **Next** e depois em **Create**.
+
+![alt text](../Images/W365/02-RDPSettings-7.png)
 ## Learning Resources
 - [Manage RDP Devices](https://learn.microsoft.com/en-us/windows-365/enterprise/manage-rdp-device-redirections)
 - [Dynamic membership rules for groups in Azure Active Directory](https://learn.microsoft.com/en-us/azure/active-directory/enterprise-users/groups-dynamic-membership)
