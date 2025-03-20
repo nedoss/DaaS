@@ -130,7 +130,8 @@ Em seguida, inicie o Remote Desktop Client App, atualize o espaço de trabalho d
 
 > **Observação**: se você estiver tentando acessar sua área de trabalho virtual de dispositivos Windows ou outros dispositivos que não estão conectados ao Azure AD, adicione **targetisaadjoined:i:1** como uma propriedade RDP personalizada ao Host Pool. [Mais informações aqui](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-ad-joined-vm#access-azure-ad-joined-vms)
 
-- Desafio 2: **[Configurar Propriedades RDP](W365/02-W365-RDP-Properties.md)**
+
+Desafio 2: **[Configurar Propriedades RDP](<AVD/Solutionguide 2-AVD-RDP-Properties - PT-BR.md>)**
 
 
 ## Recursos de Aprendizagem

@@ -67,6 +67,9 @@ A guia cope Tags pode ser ignorada, mas a guia Assignment é importante. Aqui vo
 Clique em **Next** e depois em **Create**.
 
 ![alt text](../Images/W365/02-RDPSettings-7.png)
+
+Desafio 3: **[Implantar aplicativos via Intune](W365/03-W365-App-Deployment.md)**
+
 ## Learning Resources
 - [Manage RDP Devices](https://learn.microsoft.com/en-us/windows-365/enterprise/manage-rdp-device-redirections)
 - [Dynamic membership rules for groups in Azure Active Directory](https://learn.microsoft.com/en-us/azure/active-directory/enterprise-users/groups-dynamic-membership)

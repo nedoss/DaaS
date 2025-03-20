@@ -160,6 +160,7 @@ Faça login com seu usuário e você verá seu PC na nuvem em **Devices** e cliq
 
 ![W365 Windows App Web Client](../Images/W365/01-W365-WindowsApp-1.png)
 
+Desafio 2: **[Configurar Propriedades RDP](W365/02-W365-RDP-Properties.md)**
 
 ## Recursos de Aprendizagem
 - [Deployment overview](https://learn.microsoft.com/en-us/windows-365/enterprise/deployment-overview)
