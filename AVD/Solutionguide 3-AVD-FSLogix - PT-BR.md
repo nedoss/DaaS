@@ -139,7 +139,7 @@ Para atribuir permissões de acesso aos usuários:
 Clique em **Review + assign**
 
  💡> Para configurar o FSLogix nos session Hosts, você precisa carregar o setupFSLogix.ps1 em um contêiner em sua Storage account
-[Configuração de extensão de script personalizado FSLogix](.. /Fontes/setupFSLogix.ps1)
+[Configuração de extensão de script personalizado FSLogix](../Sources/setupFSLogix.ps1)
 
 - Navegue até **seu Storage Account** 
 - Selecione ** Containers**
