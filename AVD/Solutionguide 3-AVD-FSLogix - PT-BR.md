@@ -142,7 +142,7 @@ Clique em **Review + assign**
 [Configuração de extensão de script personalizado FSLogix](../Sources/setupFSLogix.ps1)
 
 - Navegue até **Storage Account** 
-- Selecione ** Containers**
+- Selecione **Containers**
 - Clique em **+ Container**, escolha um nome para o Container (no nosso caso, selecionamos cse para extensão de script personalizado)
 - Nível de acesso público: **private**
 

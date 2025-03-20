@@ -34,7 +34,7 @@ Criar novos Remote Apps
 ## 💡 Dicas 💡 
 > **1.** Estamos implantando um Host Pool somente EntraID. Nesse caso, você precisa definir direitos do IAM (RBAC) no nível do  resource group. [Mais informações aqui](https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-ad-joined-session-hosts#assign-user-access-to-host-pools)
 
-> **2.** Se você estiver tentando acessar sua área de trabalho virtual de ** Windows devices or other devices that are not connected to the same Entra ID tenant **, adicione **targetisaadjoined:i:1** como uma propriedade RDP personalizada ao Host Pool. [Mais informações aqui](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-ad-joined-vm#access-azure-ad-joined-vms)
+> **2.** Se você estiver tentando acessar sua área de trabalho virtual de **Dispositivos Windows ou outros dispositivos que não estão conectados no mesmo Entra ID tenant**, adicione **targetisaadjoined:i:1** como uma propriedade RDP personalizada ao Host Pool. [Mais informações aqui](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-ad-joined-vm#access-azure-ad-joined-vms)
 
 ## Etapa 1 - Criar um novoPooled Host Pool e Workspace
 
@@ -50,14 +50,14 @@ Criar novos Remote Apps
 
 > **Info:** Isso afetará apenas os metadados. O local do datacenter para máquinas virtuais será exibido. 
 
-Altere ** Validation environment ** para **No**.
-Depois de concluído, selecione ** Next: Virtual Machines **.
+Altere **Validation environment** para **No**.
+Depois de concluído, selecione **Next: Virtual Machines**.
 
 ![Esta imagem mostra onde você inserirá as informações do Host Pool.](../Images/AVD/02-Hostpool_create_multisession_2.png "Criar página de Host Pool em pool")
 
-5. Navegue até ** Virtual Machines ** na parte superior e selecione **Yes** para adicionar novas máquinas virtuais ao Host Pools do AVD.
+5. Navegue até **Virtual Machines** na parte superior e selecione **Yes** para adicionar novas máquinas virtuais ao Host Pools do AVD.
 
-Selecione seu ** Resource group ** e insira um **VM name prefix**, ele acrescentará automaticamente "-[número]" ao nome da VM. Siga os valores mostrados na imagem abaixo:
+Selecione seu **Resource group** e insira um **VM name prefix**, ele acrescentará automaticamente "-[número]" ao nome da VM. Siga os valores mostrados na imagem abaixo:
 
 ![Esta imagem mostra onde você inserirá as informações dos hosts da sessão do AVD.](../Images/AVD/02-Hostpool_create_sessionhosts_2.png)
 
