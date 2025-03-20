@@ -32,7 +32,10 @@ Criar novos Remote Apps
 6. Os aplicativos do Office podem ser acessados via RemoteApp
 
 ## 💡 Dicas 💡 
-> **1.** Estamos implantando um Host Pool somente EntraID. Nesse caso, você precisa definir direitos do IAM (RBAC) no nível do  resource group. [Mais informações aqui](https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-ad-joined-session-hosts#assign-user-access-to-host-pools)
+> **1.** Estamos implantando um Host Pool somente EntraID. **Nesse caso, você precisa definir direitos do IAM (RBAC) no nível do  resource group**. [Mais informações aqui](https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-ad-joined-session-hosts#assign-user-access-to-host-pools)
+
+- Atribua seus usuários a função de **Virtual Machine User Login para** que eles possam entrar nas VMs.
+- Atribua aos administradores que precisam de privilégios administrativos locais a função de **Virtual Machine Administrator Login**.
 
 > **2.** Se você estiver tentando acessar sua área de trabalho virtual de **Dispositivos Windows ou outros dispositivos que não estão conectados no mesmo Entra ID tenant**, adicione **targetisaadjoined:i:1** como uma propriedade RDP personalizada ao Host Pool. [Mais informações aqui](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-ad-joined-vm#access-azure-ad-joined-vms)
 
@@ -51,11 +54,11 @@ Criar novos Remote Apps
 > **Info:** Isso afetará apenas os metadados. O local do datacenter para máquinas virtuais será exibido. 
 
 Altere **Validation environment** para **No**.
-Depois de concluído, selecione **Next: Virtual Machines**.
+Depois de concluído, selecione **Next: Session hosts**.
 
 ![Esta imagem mostra onde você inserirá as informações do Host Pool.](../Images/AVD/02-Hostpool_create_multisession_2.png "Criar página de Host Pool em pool")
 
-5. Navegue até **Virtual Machines** na parte superior e selecione **Yes** para adicionar novas máquinas virtuais ao Host Pools do AVD.
+5. Navegue até **Add Virtual Machines** na parte superior e selecione **Yes** para adicionar novas máquinas virtuais ao Host Pools do AVD.
 
 Selecione seu **Resource group** e insira um **VM name prefix**, ele acrescentará automaticamente "-[número]" ao nome da VM. Siga os valores mostrados na imagem abaixo:
 
@@ -71,13 +74,15 @@ Na última etapa, insira suas credenciais de administrador local, ignore a confi
 
 ![Esta imagem mostra como, na guia criar um espaço de trabalho do Host Pools, insira as informações necessárias.](../Images/AVD/02-hostpoolWorkspace.png "Criar uma guia de espaço de trabalho do Host Pool")
 
-8. Na página Criar um Host Pool, selecione **Create**.
+8. Na página Criar um Host Pool, selecione **Review + Create**.
 
 > **Observação**: se você estiver tentando acessar sua área de trabalho virtual de dispositivos Windows ou outros dispositivos que não estão conectados ao Azure AD, adicione **targetisaadjoined:i:1** como uma propriedade RDP personalizada ao Host Pool. [Mais informações aqui](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-ad-joined-vm#access-azure-ad-joined-vms)
 
+**A Criação do Host Pool levará alguns minutos para acabar** Nos avise caso esteja demorando mais do que o esperado.
+
 ## Etapa 2 – Atribuir acesso de usuário ao Host Pool
 
-Depois de criar seu Host Pool, você deve atribuir aos usuários acesso ao grupo de aplicativos da área de trabalho. Recomendamos que você use grupos de usuários em vez de usuários individuais sempre que possível. Como você já atribuiu as permissões de Logon de Usuário de Máquina Virtual ou Logon de Administrador de Máquina Virtual no Desafio 1 no nível do grupo de recursos, essa tarefa não é mais necessária aqui. Se você ainda não fez isso ou se usa outro Resource Group, vá em frente e atribua essas funções aos usuários que devem ser capazes de fazer login nas áreas de trabalho em pool.
+Depois de criar seu Host Pool, **você deve atribuir aos usuários acesso ao grupo de aplicativos da área de trabalho**.  Recomendamos que você use grupos de usuários em vez de usuários individuais sempre que possível. Como você já atribuiu as permissões de Logon de Usuário de Máquina Virtual ou Logon de Administrador de Máquina Virtual no Desafio 1 no nível do grupo de recursos, essa tarefa não é mais necessária aqui. Se você ainda não fez isso ou se usa outro Resource Group, vá em frente e atribua essas funções aos usuários que devem ser capazes de fazer login nas áreas de trabalho em pool.
 
 1. Atribua seus usuários ou grupos ao desktop application group criado no passo 7 do exercício anterior. Ex: **HP-AVD-T1-DAG**.
 
