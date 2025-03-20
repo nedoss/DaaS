@@ -158,7 +158,7 @@ Abra o [**Windows App Web client**](https://windows365.microsoft.com/ent) ou use
 
 Faça login com seu usuário e você verá seu PC na nuvem em **Devices** e clique em **Connect** para se conectar ao seu PC na nuvem.   
 
-![W365 Windows App Web Client](Images/W365/01-W365-WindowsApp-1.png)
+![W365 Windows App Web Client](../Images/W365/01-W365-WindowsApp-1.png)
 
 
 ## Recursos de Aprendizagem
