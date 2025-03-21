@@ -82,9 +82,11 @@ Na última etapa, insira suas credenciais de administrador local, ignore a confi
 
 ## Etapa 2 – Atribuir acesso de usuário ao Host Pool
 
-Depois de criar seu Host Pool, **você deve atribuir aos usuários acesso ao grupo de aplicativos da área de trabalho**.  Recomendamos que você use grupos de usuários em vez de usuários individuais sempre que possível. Como você já atribuiu as permissões de Logon de Usuário de Máquina Virtual ou Logon de Administrador de Máquina Virtual no Desafio 1 no nível do grupo de recursos, essa tarefa não é mais necessária aqui. Se você ainda não fez isso ou se usa outro Resource Group, vá em frente e atribua essas funções aos usuários que devem ser capazes de fazer login nas áreas de trabalho em pool.
+Depois de criar seu Host Pool, **você deve atribuir aos usuários acesso ao Application Group da área de trabalho**.  Recomendamos que você use grupos de usuários em vez de usuários individuais sempre que possível. Como você já atribuiu as permissões de Logon de Usuário de Máquina Virtual ou Logon de Administrador de Máquina Virtual no Desafio 1 no nível do grupo de recursos, essa tarefa não é mais necessária aqui. Se você ainda não fez isso ou se usa outro Resource Group, vá em frente e atribua essas funções aos usuários que devem ser capazes de fazer login nas áreas de trabalho em pool.
 
-1. Atribua seus usuários ou grupos ao desktop application group criado no passo 7 do exercício anterior. Ex: **HP-AVD-T1-DAG**.
+1. Atribua seus usuários ou grupos ao desktop application group criado no passo 7 do exercício anterior. Ex: **HP-AVD-T#-DAG**.
+
+![Atribuir acesso ao Application Group](../Images/AVD/02-ApplicationGroupAssignment00.png)
 
 2. Atribua aos usuários a  função **Virtual Machine User Login** para que eles possam entrar nas VMs.
 
