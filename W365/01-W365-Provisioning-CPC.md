@@ -32,7 +32,7 @@ Há duas opções para atribuir licenças aos usuários.
 
 ### [Opção 1] - Por atribuição de usuário
 
-A primeira opção é atribuir por usuário. Para fazer isso, você precisa selecionar **Users** e, em seguida, **Active Users** para obter a lista de todos os usuários ativos. Em seguida, procure seu usuário, por exemplo, **Punk1**, e selecione **User, Punk1**. 
+A primeira opção é atribuir por usuário. Para fazer isso, você precisa selecionar **Users** e, em seguida, **Active Users** para obter a lista de todos os usuários ativos. Em seguida, procure seu usuário, por exemplo, **Team1**, e selecione **User, Team1**. 
 
 ![M365 Admin Center - Active Users](../Images/W365/01-W365-License-Assignment-1.png)
 
