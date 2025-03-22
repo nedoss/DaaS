@@ -74,7 +74,7 @@ Na última etapa, insira suas credenciais de administrador local, ignore a confi
 
 ![Esta imagem mostra como, na guia criar um espaço de trabalho do Host Pools, insira as informações necessárias.](../Images/AVD/02-hostpoolWorkspace.png "Criar uma guia de espaço de trabalho do Host Pool")
 
-8. Na página Criar um Host Pool, selecione **Review + Create**.
+8. Na página Create a host pool, selecione **Review + Create** e na ultima tela em **Create**.
 
 > **Observação**: se você estiver tentando acessar sua área de trabalho virtual de dispositivos Windows ou outros dispositivos que não estão conectados ao Azure AD, adicione **targetisaadjoined:i:1** como uma propriedade RDP personalizada ao Host Pool. [Mais informações aqui](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-ad-joined-vm#access-azure-ad-joined-vms)
 
@@ -82,9 +82,9 @@ Na última etapa, insira suas credenciais de administrador local, ignore a confi
 
 ## Etapa 2 – Atribuir acesso de usuário ao Host Pool
 
-Depois de criar seu Host Pool, **você deve atribuir aos usuários acesso ao Application Group da área de trabalho**.  Recomendamos que você use grupos de usuários em vez de usuários individuais sempre que possível. Se você já atribuiu as permissões de Logon de Usuário de Máquina Virtual ou Logon de Administrador de Máquina Virtual no Desafio 1 no nível do Resource Group, essa tarefa não é mais necessária aqui. Se você ainda não fez isso ou se usa outro Resource Group, vá em frente e atribua essas funções aos usuários que devem ser capazes de fazer login nas áreas de trabalho em pool.
+Depois de criar seu Host Pool, **você deve atribuir aos usuários acesso ao Application Group dentro do Host Poll Criado**.  Recomendamos que você use grupos de usuários em vez de usuários individuais sempre que possível. Se você já atribuiu as permissões de Logon de Usuário de Máquina Virtual ou Logon de Administrador de Máquina Virtual no Desafio 1 no nível do Resource Group, essa tarefa não é mais necessária aqui. Se você ainda não fez isso ou se usa outro Resource Group, vá em frente e atribua essas funções aos usuários que devem ser capazes de fazer login nas áreas de trabalho em pool.
 
-1. Atribua seus usuários ou grupos ao desktop application group criado no passo 7 do exercício anterior. Ex: **Adicionar o Grupo GRP-T#-Users ao HP-AVD-T#-DAG**.
+1. Atribua seus usuários ou grupos ao Application Group criado no exercício anterior. Ex: **Adicionar o Grupo GRP-T#-Users ao HP-AVD-T#-DAG**.
 
 ![Atribuir acesso ao Application Group](../Images/AVD/02-ApplicationGroupAssignment00.png)
 
