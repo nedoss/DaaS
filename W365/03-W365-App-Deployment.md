@@ -30,7 +30,7 @@ Após o provisionamento, você pode personalizar a experiência do usuário usan
 
 3. Em seguida, escolha **your application package in format intunewim** e clique em **OK**. 
 
-> **Observação**: Se você não quiser criar seu próprio pacote VSCode Intunewim, preparamos um pacote [aqui](Sources/VSCodeSetup-x64.intunewin)
+> **Observação**: Se você não quiser criar seu próprio pacote VSCode Intunewim, preparamos um pacote [aqui](../Sources/VSCodeSetup-x64.intunewin)
 
 ![036-AppDeployment.png](../Images/W365/03-AppDeployment-2.png)
 
