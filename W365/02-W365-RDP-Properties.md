@@ -22,16 +22,16 @@ Abra o Microsoft Intune Admin Center [https://in.cmd.ms/](https://in.cmd.ms/) e 
 
 Em seguida, procure por **Dispositivos** (o modo de pesquisa deve estar ativado) e selecione seu grupo de dispositivos de usuário.
 
-![RDPSettings-Group](../Images/W365/02-RDPSettings-1.png)
+![029-group.png](../Images/W365/02-RDPSettings-Group-1.png)
 
 Em seguida, selecione **Dynamic Membership Rules** e adicione uma nova regra ou modifique a regra existente para incluir todos os dispositivos com o nome de exibição que você configurou no perfil de provisionamento do W365. E então **Save**. 
 
-![030-group.png](../Images/W365/02-RDPSettings-2.png)
+![030-group.png](../Images/W365/02-RDPSettings-Group-2.png)
 
 Lastly, you need to check that the processing status of the dynamic rule is not "Paused", otherwise you need to change the processing pause value from **Yes to No**.
 Por fim, você precisa verificar se o status de processamento da regra dinâmica não está "Paused", caso contrário, você precisa alterar o valor da pausa de processamento de **Yes para No**.
 
-![030-group.png](../Images/W365/02-RDPSettings-3.png)
+![030-group.png](../Images/W365/02-RDPSettings-Group-3.png)
 
 ## Etapa 2 – Configurar um perfil de configuração de dispositivo Intune para as configurações de RDP
 
