@@ -24,7 +24,7 @@ Após o provisionamento, você pode personalizar a experiência do usuário usan
 
 ![034-AppDeployment.png](../Images/W365/03-AppDeployment-0.png)
 
-> **Observação**: para aplicativos do Windows (Win32), você precisa converter as fontes de instalação, como exe ou msi, em um pacote intunewim. [Aqui você encontrará a ferramenta de preparação](https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool). Mas não se preocupe, se você quiser adiantar o laboratório e não quiser criar seu próprio pacote VSCode Intunewim, preparamos um pacote [aqui](../Sources/VSCodeSetup-x64.intunewin). Para fazer download só é necessário clicar no link e depois clicar no botão ![download](../Images/W365/download.png) no canto esquerdo superior da página.
+> **Observação**: para aplicativos do Windows (Win32), você precisa converter as fontes de instalação, como exe ou msi, em um pacote intunewim. [Aqui você encontrará a ferramenta de preparação](https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool). Mas não se preocupe, se você quiser adiantar o laboratório e não quiser criar seu próprio pacote VSCode Intunewim, preparamos um pacote [aqui](../Sources/VSCodeSetup-x64.intunewin). Para fazer download só é necessário clicar no link e depois clicar no botão ![download](../Images/W365/download.png) no canto direito superior da página.
 
 ![035-AppDeployment.png](../Images/W365/03-AppDeployment-1.png)
 
