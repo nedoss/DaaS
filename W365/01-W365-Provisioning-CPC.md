@@ -6,7 +6,7 @@ Você comprou uma licença do Windows 365. Neste ponto, você pode começar com 
 
 Para configurar seu sistema para provisionar PCs na nuvem sob demanda para você, você precisa:
 
-- Um grupo de ID do Entra com **GRP-P[count]-Users**, por exemplo, GRP-P1-Users, já está criado.
+- Um grupo de ID do Entra com **GRP-T[count]-Users**, por exemplo, GRP-T1-Users, já está criado.
 - Atribua licenças ao seu usuário ou grupo.
 - Seu usuário deve ter direitos de administrador local para seu PC na nuvem.
 - Seu PC na nuvem está usando as redes hospedadas da Microsoft.
@@ -17,7 +17,7 @@ Para configurar seu sistema para provisionar PCs na nuvem sob demanda para você
 ## Critério de Sucesso
 1. Uma licença do Windows365 e do Intune é atribuída automaticamente aos seus usuários.
 2. Seu usuário tem direitos de administrador local.
-3. Uma política de provisionamento com **PP-P[count]-YourPolicyName** é criada.
+3. Uma política de provisionamento com **PP-T[count]-YourPolicyName** é criada.
 4. Uma implantação de PC na nuvem está em execução.
 
 
