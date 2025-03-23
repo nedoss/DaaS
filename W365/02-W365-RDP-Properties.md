@@ -43,7 +43,7 @@ Selecione **Windows 10 and later** como Plataforma e **Settings catalog** como T
 
 ![RDPSettings-2.png](../Images/W365/02-RDPSettings-2.png)
 
-Insira um nome do seu perfil de configuração, por exemplo, **CP-T#-RDP-Restrictions** e clique em **Next**.
+Insira um nome do seu perfil de configuração, por exemplo, **CP-TEAM#-RDP-Restrictions** e clique em **Next**.
 
 ![RDPSettings-3.png](../Images/W365/02-RDPSettings-3.png)
 
