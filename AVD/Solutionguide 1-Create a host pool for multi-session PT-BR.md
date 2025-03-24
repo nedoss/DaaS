@@ -88,7 +88,7 @@ Depois de criar seu Host Pool, **você deve atribuir aos usuários acesso ao App
 
 ![Atribuir acesso ao Application Group](../Images/AVD/02-ApplicationGroupAssignment00.png)
 
-2. Atribua aos usuários a  função **Virtual Machine User Login** para que eles possam entrar nas VMs.
+2. Atribua aos usuários a função **Virtual Machine User Login** no **Resource Group** para que eles possam entrar nas VMs.
 
 ![Atribuir Virtual Machine User Login](<../Images/AVD/02-Virtual Machine User Login00.png>)
 
