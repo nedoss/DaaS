@@ -115,7 +115,7 @@ Na  guia **Settings**, faça as seguintes configurações:
 | License type    | **Enterprise** |
 | Join type | **Microsoft Entra Join** |
 | Network    | **Microsoft hosted network** |
-| Geography  | **Germany** | You can also select **European Union**. |
+| Geography  | **East US** |
 | Use Microsoft Entra single sign-on | **Enabled** |
 
 ![W365 Provisioning policy](../Images/W365/01-W365-Provisioning-2.png)
