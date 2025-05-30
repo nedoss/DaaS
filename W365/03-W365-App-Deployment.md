@@ -15,7 +15,7 @@ Após o provisionamento, você pode personalizar a experiência do usuário usan
 1. O Visual Studio Code, com o nome **APP-TEAM#-YourAppName** está disponível como um novo aplicativo do Windows (Win32) no Intune.
 2. O aplicativo Visual Studio Code é atribuído e instalado em seu PC na nuvem.
 
-## Etapa 1 – Criar um novo Winodows app (Win32) por meio da implantação do Intune
+## Etapa 1 – Criar um novo Windows app (Win32) por meio da implantação do Intune
 
 1. Abra o Centro de Administração Microsoft Intune [https://in.cmd.ms/](https://in.cmd.ms/) e selecione **Apps** e **Windows** para adicionar um novo Windows App.
 
