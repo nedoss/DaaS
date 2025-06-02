@@ -49,7 +49,7 @@ Você receberá suas credenciais de Administrador e Usuário pessoalmente, cuide
 
 - Desafio 1: **[Criar um pool de hosts para desktops de múltiplas sessões](<AVD/Solutionguide 1-Create a host pool for multi-session PT-BR.md>)**
 - Desafio 2: **[Configurar Propriedades RDP](<AVD/Solutionguide 2-AVD-RDP-Properties - PT-BR.md>)**
-- Desafio 3: **[Habilitar FSLogix Profile Container](<AVD/Solutionguide 3-AVD-FSLogix - PT-BR.md>)**  
+- Desafio 3:(Opcional) **[Habilitar FSLogix Profile Container](<AVD/Solutionguide 3-AVD-FSLogix - PT-BR.md>)**  
 
 ### Windows 365
 
