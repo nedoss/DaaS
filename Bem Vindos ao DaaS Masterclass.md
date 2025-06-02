@@ -57,6 +57,9 @@ Você receberá suas credenciais de Administrador e Usuário pessoalmente, cuide
 - Desafio 2: **[Configurar Propriedades RDP](W365/02-W365-RDP-Properties.md)**
 - Desafio 3:(Opcional) **[Implantar aplicativos via Intune](W365/03-W365-App-Deployment.md)**
 
+### Nerdio
+- Desafio 1: **[Enterprise Foundations Lab]()**
+
 
 ## Contribuidores
 
