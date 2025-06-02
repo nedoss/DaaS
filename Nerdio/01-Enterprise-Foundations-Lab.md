@@ -8,19 +8,19 @@ Creating an image source virtual machine
 4. Configure the following:
 
 
- |Name |  Enter a unique name. Save the name for later!|
- |Description |  Leave this blank|
- |Network |  Leave at default.|
- |Azure Image | Windows 11 (23H2) AVD + Microsoft 365 Apps - Gen2 (multi-session)|
- |VM Size |  D2s_v5|
- |OS Disk |  P10|
- |Resource Group |  Leave at default.|
- |Security Type |  Leave at default.|
- |Join to AD |  Uncheck this box.|
- |Do not create image |  Check this box.|
- |Set Time Zone |  Set to the local time zone.|
- |Optimize Disk Type when Desktop Image is Stopped |  Check this box.|
- |Provide custom credentials for local admin |  Toggle ON and Enter local administrator credentials for the image source VM.|
+ | Name |  Enter a unique name. Save the name for later! |
+ | Description |  Leave this blank |
+ | Network |  Leave at default. |
+ | Azure Image | Windows 11 (23H2) AVD + Microsoft 365 Apps - Gen2 (multi-session) |
+ | VM Size |  D2s_v5 |
+ | OS Disk |  P10 |
+ | Resource Group |  Leave at default. |
+ | Security Type |  Leave at default. |
+ | Join to AD |  Uncheck this box. |
+ | Do not create image |  Check this box. |
+ | Set Time Zone |  Set to the local time zone. |
+ | Optimize Disk Type when Desktop Image is Stopped |  Check this box. |
+ | Provide custom credentials for local admin |  Toggle ON and Enter local administrator credentials for the image source VM. |
 
  Imagem2
  
