@@ -49,20 +49,22 @@ Creating a dynamic host pool
 3. Click **New host pool**
 4. Configure the following:
 
- HP Name(internal only) | Enter a unique name. Save the name for later!
- Description |  Leave blank.
- Resource Group |  Leave at default.
- Desktop Experience |  Multi user desktop (pooled)
- Directory |  Leave at default.
- FSLogix |  Leave at default.
- RDP Profile |  Leave at default.
- Name |  Enter a name.
- Network |  Leave at default.
- Desktop Image | Windows 11 (23H2) AVD + Microsoft 365 Apps - Gen2 (multi-session)
-VM Size |  D2s_v5
-OS Disk |  Leave at default (E10)
- Resource Group | Leave at default.
- Quick-Assign |  Leave Empty.
+| Property | Value |
+|---|---|
+| HP Name(internal only) | Enter a unique name. Save the name for later! |
+| Description |  Leave blank. |
+| Resource Group |  Leave at default. |
+| Desktop Experience |  Multi user desktop (pooled) |
+| Directory |  Leave at default. |
+| FSLogix |  Leave at default. |
+| RDP Profile |  Leave at default. |
+| Name |  Enter a name. |
+| Network |  Leave at default. |
+| Desktop Image | Windows 11 (23H2) AVD + Microsoft 365 Apps - Gen2 (multi-session) |
+| VM Size |  D2s_v5 |
+| OS Disk |  Leave at default (E10) |
+| Resource Group | Leave at default. |
+| Quick-Assign |  Leave Empty. |
 
  Imagem6
  
