@@ -58,7 +58,7 @@ Você receberá suas credenciais de Administrador e Usuário pessoalmente, cuide
 - Desafio 3:(Opcional) **[Implantar aplicativos via Intune](W365/03-W365-App-Deployment.md)**
 
 ### Nerdio
-- Desafio 1: **[Enterprise Foundations Lab]()**
+- Desafio 1: **[Enterprise Foundations Lab](Nerdio/01-Enterprise-Foundations-Lab.md)**
 
 
 ## Contribuidores
