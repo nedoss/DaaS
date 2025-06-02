@@ -7,7 +7,11 @@ Creating an image source virtual machine
 3. Click **Add from Azure Library**
 4. Configure the following:
 
-Virtual Machine:
+Display settings:
+ | RDP Property | Value |
+ |---|---|
+ | Multiple displays | **Enable multiple display support** |
+ | Smart sizing | **The local window content will scale when resized** |
  | Name | Enter a unique name. Save the name for later! |
  | Description | Leave this blank |
  | Network | Leave at default. |
