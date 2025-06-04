@@ -1,3 +1,5 @@
+#Nerdio - Enterprise Foundations Lab Guide
+
 ### Lab 1
 Creating an image source virtual machine
 
@@ -26,13 +28,6 @@ Creating an image source virtual machine
  | Provide custom credentials for local admin | **Toggle ON and Enter local administrator credentials for the image source VM.** |
 
  ![Add Desktop Images](../Images/Nerdio/AddDesktopImage.png)
- 
-<div style="text-align: center;">
-  URL_da_imagem "Título opcional"
-    Images/Nerdio/AddDesktopImage.png "Add Desktop Images"
-</div>
-
- 
  
  ### Lab 3.1
  Creating an AVD workspace
