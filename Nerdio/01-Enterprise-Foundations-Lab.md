@@ -69,6 +69,10 @@
 
 ![Host Pool Dinâmico](../Images/Nerdio/DynamicHostPool.png)
 
+**Note:**  
+- **DO NOT ENABLE AUTO-SCALE.**  
+- Monitor progress in the **Host Pools Tasks** section.  
+
 ### Laboratório 3.3 - Criando session hosts
 
 1. Encontre o host pool que você criou.
@@ -89,3 +93,10 @@
 | Number of failures before Abort | **5** |
 
 ![Host para Pool Dinâmico](../Images/Nerdio/HostToDynamicPool.png)
+
+**Note:**  
+- If Autoscaling is enabled, the newly added host may be deleted or stopped.  
+ 
+---
+ 
+© Copyright Nerdio 2025. All Rights Reserved.
