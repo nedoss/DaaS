@@ -1,4 +1,4 @@
-#Nerdio - Enterprise Foundations Lab Guide
+# Nerdio - Enterprise Foundations Lab Guide
 
 ### Lab 1
 Creating an image source virtual machine
