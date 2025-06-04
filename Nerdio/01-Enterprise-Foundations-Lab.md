@@ -1,7 +1,6 @@
 # Nerdio - Enterprise Foundations Lab Guide
 
-### Lab 1
-Creating an image source virtual machine
+### Lab 1 - Creating an image source virtual machine
 
 1. Log into the sandbox.
     See your email for an access link.
@@ -29,8 +28,7 @@ Creating an image source virtual machine
 
  ![Add Desktop Images](../Images/Nerdio/AddDesktopImage.png)
  
- ### Lab 3.1
- Creating an AVD workspace
+ ### Lab 3.1 - Creating an AVD workspace
  
 1. Click the **Workspaces** blade
 2. Click New Workspace.
@@ -46,8 +44,7 @@ Creating an image source virtual machine
  
 ![Create Workspace](../Images/Nerdio/CreateWorkspace.png)
  
-### Lab 3.2
-Creating a dynamic host pool
+### Lab 3.2 - Creating a dynamic host pool
  
 1. Find your Workspace.
 2. Click the dropdown arrow next to **Workspace** and select **Dynamic Host Pools**.
@@ -74,8 +71,8 @@ Creating a dynamic host pool
 ![Dynamic Host Pool](../Images/Nerdio/DynamicHostPool.png)
  
  
-### Lab 3.3
-Creating session hosts
+### Lab 3.3 - Creating session hosts
+
 1. Find the host pool you created.
 2. Click on **the Name of your Host Pool**
 3. Click **New Host**
