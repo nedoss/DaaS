@@ -27,6 +27,8 @@
 
 ![Adicionar Imagens de Área de Trabalho](../Images/Nerdio/AddDesktopImage.png)
 
+---
+
 ### Laboratório 3.1 - Criando um workspace AVD
 
 1. Clique na guia **Workspaces**  
@@ -42,6 +44,8 @@
 | Location | **Selecione uma região próxima de você.** |
 
 ![Criar Workspace](../Images/Nerdio/CreateWorkspace.png)
+
+---
 
 ### Laboratório 3.2 - Criando um host pool dinâmico
 
@@ -72,6 +76,8 @@
 **Note:**  
 - **DO NOT ENABLE AUTO-SCALE.**  
 - Monitor progress in the **Host Pools Tasks** section.  
+
+---
 
 ### Laboratório 3.3 - Criando session hosts
 
