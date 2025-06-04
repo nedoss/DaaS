@@ -25,7 +25,13 @@ Creating an image source virtual machine
  | Optimize Disk Type when Desktop Image is Stopped | **Check this box.** |
  | Provide custom credentials for local admin | **Toggle ON and Enter local administrator credentials for the image source VM.** |
 
- <p align="center">![Add Desktop Images](../Images/Nerdio/AddDesktopImage.png).</p>
+ ![Add Desktop Images](../Images/Nerdio/AddDesktopImage.png)
+ 
+<div style="text-align: center;">
+  URL_da_imagem "Título opcional"
+    Images/Nerdio/AddDesktopImage.png "Add Desktop Images"
+</div>
+
  
  
  ### Lab 3.1
