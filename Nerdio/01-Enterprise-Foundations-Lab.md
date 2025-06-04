@@ -6,6 +6,7 @@ Creating an image source virtual machine
 2. Click the **Desktop Images blade** 
 ![Desktop Images](../Images/Nerdio/DesktopImages.png)
 3. Click **Add from Azure Library**
+![Add from Azure Library](../Images/Nerdio/addAzureLibray.png)
 4. Configure the following:
 
  | Property | Value |
@@ -24,7 +25,7 @@ Creating an image source virtual machine
  | Optimize Disk Type when Desktop Image is Stopped | **Check this box.** |
  | Provide custom credentials for local admin | **Toggle ON and Enter local administrator credentials for the image source VM.** |
 
- Imagem2
+ ![Add Desktop Images](../Images/Nerdio/AddDesktopImage.png)
  
  
  ### Lab 3.1
@@ -42,7 +43,7 @@ Creating an image source virtual machine
 | Resource Group | Leave at default. |
 | Location | **select a Region Close to you​.** |
  
-Imagem4
+![Create Workspace](../Images/Nerdio/CreateWorkspace.png)
  
 ### Lab 3.2
 Creating a dynamic host pool
@@ -69,7 +70,7 @@ Creating a dynamic host pool
 | Resource Group | Leave at default. |
 | Quick-Assign |  Leave Empty. |
 
- Imagem6
+![Dynamic Host Pool](../Images/Nerdio/DynamicHostPool.png)
  
  
 ### Lab 3.3
@@ -91,4 +92,4 @@ Creating session hosts
 | Process Hosts in Groups of | **2** |
 | Number of failures before Abort | **5** |
   
-  Imagem7
+![Host to Dynamic Pool](../Images/Nerdio/HostToDynamicPool.png)
