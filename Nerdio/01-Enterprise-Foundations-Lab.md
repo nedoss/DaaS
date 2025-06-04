@@ -3,9 +3,9 @@ Creating an image source virtual machine
 
 1. Log into the sandbox.
     See your email for an access link.
-2. Click the **Desktop Images blade** ![Desktop Images](../Images/Nerdio/DesktopImages.png)
+2. Click the **Desktop Images blade**   ![Desktop Images](../Images/Nerdio/DesktopImages.png)
 
-3. Click **Add from Azure Library** ![Add from Azure Library](../Images/Nerdio/addAzureLibray.png)
+3. Click **Add from Azure Library**     ![Add from Azure Library](../Images/Nerdio/addAzureLibray.png)
 
 4. Configure the following:
 
