@@ -1,93 +1,91 @@
 # Nerdio - Enterprise Foundations Lab Guide
 
-### Lab 1 - Creating an image source virtual machine
+### Laboratório 1 - Criando uma máquina virtual de origem de imagem
 
-1. Log into the sandbox.
-    See your email for an access link.
-2. Click the **Desktop Images blade**   ![Desktop Images](../Images/Nerdio/DesktopImages.png)
+1. Faça login no sandbox. Veja seu e-mail para o link de acesso. (MUDAR)
+2. Clique na guia **Desktop Images**   ![Desktop Images](../Images/Nerdio/DesktopImages.png)
 
-3. Click **Add from Azure Library**     ![Add from Azure Library](../Images/Nerdio/addAzureLibray.png)
+3. Clique em **Add from Azure Library**     ![Add from Azure Library](../Images/Nerdio/addAzureLibray.png)
 
-4. Configure the following:
+4. Configure conforme tabela abaixo:
 
- | Property | Value |
+ | Propriedade | Valor |
  |---|---|
- | Name | **Enter a unique name. Save the name for later!** |
- | Description | Leave this blank |
- | Network | Leave at default. |
+ | Name | **Enter a unique name. Save the name to use later!** |
+ | Description | Deixe em branco |
+ | Network | Deixe como padrão. |
  | Azure Image | **Windows 11 (23H2) AVD + Microsoft 365 Apps - Gen2 (multi-session)** |
  | VM Size | **D2s_v5** |
  | OS Disk | **P10** |
- | Resource Group | Leave at default. |
- | Security Type | Leave at default. |
- | Join to AD | **Uncheck this box.** |
- | Do not create image | **Check this box.** |
- | Set Time Zone | **Set to the local time zone.** |
- | Optimize Disk Type when Desktop Image is Stopped | **Check this box.** |
- | Provide custom credentials for local admin | **Toggle ON and Enter local administrator credentials for the image source VM.** |
+ | Resource Group | Deixe como padrão. |
+ | Security Type | Deixe como padrão. |
+ | Join to AD | **Desmarque esta opção.** |
+ | Do not create image | **Marque esta opção.** |
+ | Set Time Zone | **Defina para o fuso horário local.** |
+ | Optimize Disk Type when Desktop Image is Stopped | **Marque esta opção.** |
+ | Provide custom credentials for local admin | **Ative e insira as credenciais de administrador local para a VM de origem da imagem.** |
 
- ![Add Desktop Images](../Images/Nerdio/AddDesktopImage.png)
- 
- ### Lab 3.1 - Creating an AVD workspace
- 
-1. Click the **Workspaces** blade
-2. Click New Workspace.
-3. Configure the following:
+![Adicionar Imagens de Área de Trabalho](../Images/Nerdio/AddDesktopImage.png)
 
-| Property | Value |
+### Laboratório 3.1 - Criando um workspace AVD
+
+1. Clique na guia **Workspaces**  
+2. Clique em Novo Workspace.  
+3. Configure conforme abaixo:
+
+| Propriedade | Valor |
 |---|---|
-| Name(internal only) | **Enter a unique name. Save the name for later!** |
-| Friendly Name (visible to users) | **Enter a unique name.** |
-| Description | Leave blank. |
-| Resource Group | Leave at default. |
-| Location | **select a Region Close to you​.** |
- 
-![Create Workspace](../Images/Nerdio/CreateWorkspace.png)
- 
-### Lab 3.2 - Creating a dynamic host pool
- 
-1. Find your Workspace.
-2. Click the dropdown arrow next to **Workspace** and select **Dynamic Host Pools**.
-3. Click **New host pool**
-4. Configure the following:
+| Name(internal only) | **Insira um nome exclusivo. Salve o nome para usar depois!** |
+| Friendly Name (visible to users) | **Insira um nome exclusivo.** |
+| Description | Deixe em branco. |
+| Resource Group | Deixe como padrão. |
+| Location | **Selecione uma região próxima de você.** |
 
-| Property | Value |
+![Criar Workspace](../Images/Nerdio/CreateWorkspace.png)
+
+### Laboratório 3.2 - Criando um host pool dinâmico
+
+1. Encontre seu Workspace.
+2. Clique na seta do menu dropdown ao lado de **Workspace** e selecione **Dynamic Host Pools**.
+3. Clique em **New host pool**
+4. Configure conforme abaixo:
+
+| Propriedade | Valor |
 |---|---|
-| HP Name(internal only) | **Enter a unique name. Save the name for later!** |
-| Description |  Leave blank. |
-| Resource Group |  Leave at default. |
-| Desktop Experience |  **Multi user desktop (pooled)** |
-| Directory |  Leave at default. |
-| FSLogix |  Leave at default. |
-| RDP Profile |  Leave at default. |
-| Name |  **Enter a name.** |
-| Network |  Leave at default. |
+| HP Name(internal only) | **Insira um nome exclusivo. Salve o nome para usar depois!** |
+| Description | Deixe em branco. |
+| Resource Group | Deixe como padrão. |
+| Desktop Experience | **Multi user desktop (pooled)** |
+| Directory | Deixe como padrão. |
+| FSLogix | Deixe como padrão. |
+| RDP Profile | Deixe como padrão. |
+| Name | **Insira um nome.** |
+| Network | Deixe como padrão. |
 | Desktop Image | **Windows 11 (23H2) AVD + Microsoft 365 Apps - Gen2 (multi-session)** |
-| VM Size |  **D2s_v5** |
-| OS Disk |  Leave at default (E10) |
-| Resource Group | Leave at default. |
-| Quick-Assign |  Leave Empty. |
+| VM Size | **D2s_v5** |
+| OS Disk | Deixe como padrão (E10) |
+| Resource Group | Deixe como padrão. |
+| Quick-Assign | Deixe em branco. |
 
-![Dynamic Host Pool](../Images/Nerdio/DynamicHostPool.png)
- 
- 
-### Lab 3.3 - Creating session hosts
+![Host Pool Dinâmico](../Images/Nerdio/DynamicHostPool.png)
 
-1. Find the host pool you created.
-2. Click on **the Name of your Host Pool**
-3. Click **New Host**
-4. Configure the following:
+### Laboratório 3.3 - Criando session hosts
 
-| Property | Value |
+1. Encontre o host pool que você criou.
+2. Clique no **Nome do seu Host Pool**
+3. Clique em **New Host**
+4. Configure conforme abaixo:
+
+| Propriedade | Valor |
 |---|---|
-| Host Count |  **2** |
-| Host Name |  **Enter a name.** |
-| Network |  Leave at default. |
-| Desktop Image |  Leave at default. |
-| VM Size |  Leave at default. |
-| OS Disk |  Leave at default. |
-| Resource Group |  Leave at default. |
+| Host Count | **2** |
+| Host Name | **Insira um nome.** |
+| Network | Deixe como padrão. |
+| Desktop Image | Deixe como padrão. |
+| VM Size | Deixe como padrão. |
+| OS Disk | Deixe como padrão. |
+| Resource Group | Deixe como padrão. |
 | Process Hosts in Groups of | **2** |
 | Number of failures before Abort | **5** |
-  
-![Host to Dynamic Pool](../Images/Nerdio/HostToDynamicPool.png)
+
+![Host para Pool Dinâmico](../Images/Nerdio/HostToDynamicPool.png)
