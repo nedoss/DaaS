@@ -73,9 +73,9 @@
 
 ![Host Pool Dinâmico](../Images/Nerdio/DynamicHostPool.png)
 
-**Note:**  
-- **DO NOT ENABLE AUTO-SCALE.**  
-- Monitor progress in the **Host Pools Tasks** section.  
+**Nota:**  
+- **NÃO ATIVE O AUTO-SCALE.**  
+- Monitore o progresso na seção **Host Pools Tasks**. 
 
 ---
 
@@ -100,8 +100,8 @@
 
 ![Host para Pool Dinâmico](../Images/Nerdio/HostToDynamicPool.png)
 
-**Note:**  
-- If Autoscaling is enabled, the newly added host may be deleted or stopped.  
+**Nota:**  
+- Se o dimensionamento automático estiver ativado, o host recém-adicionado pode ser excluído ou parado.  
  
 ---
  
