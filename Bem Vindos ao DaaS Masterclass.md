@@ -51,14 +51,14 @@ Você receberá suas credenciais de Administrador e Usuário pessoalmente, cuide
 - Desafio 2: **[Configurar Propriedades RDP](<AVD/Solutionguide 2-AVD-RDP-Properties - PT-BR.md>)**
 - Desafio 3:(Opcional) **[Habilitar FSLogix Profile Container](<AVD/Solutionguide 3-AVD-FSLogix - PT-BR.md>)**  
 
+### Nerdio
+- Desafio 1: **[Enterprise Foundations Lab](Nerdio/01-Enterprise-Foundations-Lab.md)**
+
 ### Windows 365
 
 - Desafio 1: **[Provisionar um Cloud PC](W365/01-W365-Provisioning-CPC.md)**
 - Desafio 2: **[Configurar Propriedades RDP](W365/02-W365-RDP-Properties.md)**
 - Desafio 3:(Opcional) **[Implantar aplicativos via Intune](W365/03-W365-App-Deployment.md)**
-
-### Nerdio
-- Desafio 1: **[Enterprise Foundations Lab](Nerdio/01-Enterprise-Foundations-Lab.md)**
 
 
 ## Contribuidores
