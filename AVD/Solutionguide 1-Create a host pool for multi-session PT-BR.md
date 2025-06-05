@@ -95,6 +95,8 @@ Depois de criar seu Host Pool, **você deve atribuir aos usuários acesso ao App
 3. **opcional** Atribua aos administradores que precisam de privilégios administrativos locais a função de logon de administrador da máquina virtual.
 Para conceder aos usuários acesso a VMs ingressadas no Azure AD, você deve [configurar atribuições de função para a VM](https://docs.microsoft.com/en-us/azure/active-directory/devices/howto-vm-sign-in-azure-ad-windows#configure-role-assignments-for-the-vm). 
 
+**Em seguida, inicie o Windows App, atualize o espaço de trabalho do AVD e inicie o Desktop.**
+
 ## Etapa 3 - Criar Remote Apps
 
 Para disponibilizar apenas um único aplicativo para o usuário, em vez da área de trabalho completa, para que apenas o aplicativo seja renderizado no dispositivo host do qual você está trabalhando no momento, você precisa criar um grupo de aplicativos remotos. Siga as orientações:
@@ -135,7 +137,7 @@ Clique em **Next: Workspace**
 
 > Se outro application group no Host Pool do AVD já tiver sido registrado, esse grupo de aplicativos também será registrado no mesmo workspace.
 
-Em seguida, inicie o Remote Desktop Client App, atualize o espaço de trabalho do AVD e inicie os aplicativos remotos.
+**Em seguida, inicie o Windows App, atualize o espaço de trabalho do AVD e inicie os aplicativos remotos.**
 
 > **Observação**: se você estiver tentando acessar sua área de trabalho virtual de dispositivos Windows ou outros dispositivos que não estão conectados ao Azure AD, adicione **targetisaadjoined:i:1** como uma propriedade RDP personalizada ao Host Pool. [Mais informações aqui](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-ad-joined-vm#access-azure-ad-joined-vms)
 
