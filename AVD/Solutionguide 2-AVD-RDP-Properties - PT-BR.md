@@ -23,14 +23,14 @@ No pooled / multi-session Host pool (RemoteApp), navegue até **Propriedades RDP
  
 Em seguida, configure as seguintes propriedades RDP.
 
-Connection Information:
+**Connection Information:**
  | RDP Property | Value |
  |---|---|
  | Microsoft Entra single sign-on | **Connections will use Microsoft Entra authentication to provide single sign-on** |
 
  ![Connection Information](../Images/AVD/03-RDPProperty_ConnectionInformation.png)
 
-Display settings:
+**Display settings:**
  | RDP Property | Value |
  |---|---|
  | Multiple displays | **Enable multiple display support** |
@@ -38,7 +38,7 @@ Display settings:
 
 ![Propriedade RDP](../Images/AVD/03-RDPProperty_2.png)
 
-Device redirection:
+**Device redirection:**
  | RDP Property | Value |
  |---|---|
  | Microphone redirection | **Disable audio capture from the local device**  |
