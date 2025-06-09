@@ -1,5 +1,9 @@
 # Nerdio - Enterprise Foundations Lab Guide
 
+
+
+http://aka.ms/DaaSNerdioBR
+
 ### Laboratório 1 - Criando um workspace AVD
 
 1. Clique na guia **Workspaces**  

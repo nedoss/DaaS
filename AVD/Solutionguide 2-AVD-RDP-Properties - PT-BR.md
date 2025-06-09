@@ -23,6 +23,13 @@ No pooled / multi-session Host pool (RemoteApp), navegue até **Propriedades RDP
  
 Em seguida, configure as seguintes propriedades RDP.
 
+Connection Information:
+ | RDP Property | Value |
+ |---|---|
+ | Microsoft Entra single sign-on | **Connections will use Microsoft Entra authentication to provide single sign-on** |
+
+ ![Connection Information](../Images/AVD/03-RDPProperty_ConnectionInformation.png)
+
 Display settings:
  | RDP Property | Value |
  |---|---|
