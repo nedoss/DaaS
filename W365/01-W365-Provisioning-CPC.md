@@ -111,7 +111,7 @@ Na  guia **Settings**, faça as seguintes configurações:
 
 | Configuração | Valor | Observação |
 |--------------|-----------|-----------|
-| Name | Select a name for your provisioning policy, e.g. **PP-P1-CPC-ENGLISCH**      |
+| Name | Select a name for your provisioning policy, e.g. **PP-T#-CPC-ENGLISH**|
 | License type    | **Enterprise** |
 | Join type | **Microsoft Entra Join** |
 | Network    | **Microsoft hosted network** |
