@@ -14,6 +14,8 @@
 | Resource Group | Deixe como padrão. |
 | Location | **Selecione East US.** |
 
+**Nota: Lembre-se de trocar o # pelo número do seu time no desafio**
+
 ![Criar Workspace](../Images/Nerdio/CreateWorkspace.png)
 
 ---
