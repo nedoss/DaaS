@@ -1,35 +1,6 @@
 # Nerdio - Enterprise Foundations Lab Guide
 
-### Laboratório 1 - Criando uma máquina virtual de origem de imagem
-
-1. Faça login no sandbox. Veja seu e-mail para o link de acesso. (MUDAR)
-2. Clique na guia **Desktop Images**   ![Desktop Images](../Images/Nerdio/DesktopImages.png)
-
-3. Clique em **Add from Azure Library**     ![Add from Azure Library](../Images/Nerdio/addAzureLibray.png)
-
-4. Configure conforme tabela abaixo:
-
- | Propriedade | Valor |
- |---|---|
- | Name | **Enter a unique name. Save the name to use later!** |
- | Description | Deixe em branco |
- | Network | Deixe como padrão. |
- | Azure Image | **Windows 11 (23H2) AVD + Microsoft 365 Apps - Gen2 (multi-session)** |
- | VM Size | **D2s_v5** |
- | OS Disk | **P10** |
- | Resource Group | Deixe como padrão. |
- | Security Type | Deixe como padrão. |
- | Join to AD | **Desmarque esta opção.** |
- | Do not create image | **Marque esta opção.** |
- | Set Time Zone | **Defina para o fuso horário local.** |
- | Optimize Disk Type when Desktop Image is Stopped | **Marque esta opção.** |
- | Provide custom credentials for local admin | **Ative e insira as credenciais de administrador local para a VM de origem da imagem.** |
-
-![Adicionar Imagens de Área de Trabalho](../Images/Nerdio/AddDesktopImage.png)
-
----
-
-### Laboratório 3.1 - Criando um workspace AVD
+### Laboratório 1 - Criando um workspace AVD
 
 1. Clique na guia **Workspaces**  
 2. Clique em Novo Workspace.  
@@ -47,7 +18,7 @@
 
 ---
 
-### Laboratório 3.2 - Criando um host pool dinâmico
+### Laboratório 2 - Criando um host pool dinâmico
 
 1. Encontre seu Workspace.
 2. Clique na seta do menu dropdown ao lado de **Workspace** e selecione **Dynamic Host Pools**.
@@ -79,7 +50,7 @@
 
 ---
 
-### Laboratório 3.3 - Criando session hosts
+### Laboratório 3 - Criando session hosts
 
 1. Encontre o host pool que você criou.
 2. Clique no **Nome do seu Host Pool**
