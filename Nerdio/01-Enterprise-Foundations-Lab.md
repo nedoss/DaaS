@@ -8,11 +8,11 @@
 
 | Propriedade | Valor |
 |---|---|
-| Name(internal only) | **Insira um nome exclusivo. Salve o nome para usar depois!** |
-| Friendly Name (visible to users) | **Insira um nome exclusivo.** |
+| Name(internal only) | **Insira um nome. Ex: WS-Nerdio=TEAM#** |
+| Friendly Name (visible to users) | **Insira um nome. Ex: Nerdio-Team#-Workspace** |
 | Description | Deixe em branco. |
 | Resource Group | Deixe como padrão. |
-| Location | **Selecione uma região próxima de você.** |
+| Location | **Selecione East US.** |
 
 ![Criar Workspace](../Images/Nerdio/CreateWorkspace.png)
 
