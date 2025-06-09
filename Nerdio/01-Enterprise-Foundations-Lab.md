@@ -56,9 +56,9 @@
 
 ### Laboratório 3 - Criando session hosts
 
-1. Encontre o host pool que você criou.
-2. Clique no **Nome do seu Host Pool**
-3. Clique em **New Host**
+1. Encontre o host pool que você criou: **Workspaces/Dynamic host pools**
+2. Clique no **Nome do seu Host Pool Ex: Nerdio-Team#-HP**
+3. Clique em **Add Session Host**
 4. Configure conforme abaixo:
 
 | Propriedade | Valor |
