@@ -11,7 +11,7 @@
 | Name(internal only) | **Insira um nome. Ex: WS-Nerdio=TEAM#** |
 | Friendly Name (visible to users) | **Insira um nome. Ex: Nerdio-Team#-Workspace** |
 | Description | Deixe em branco. |
-| Resource Group | Deixe como padrão. |
+| Resource Group | **Escolha o Resource Group conforme seu time. Ex: RG-AVD-TEAM#** |
 | Location | **Selecione East US.** |
 
 **Nota: Lembre-se de trocar o # pelo número do seu time no desafio**
@@ -24,25 +24,27 @@
 
 1. Encontre seu Workspace.
 2. Clique na seta do menu dropdown ao lado de **Workspace** e selecione **Dynamic Host Pools**.
-3. Clique em **New host pool**
+3. Clique em **Add dynamic host pool**
 4. Configure conforme abaixo:
 
 | Propriedade | Valor |
 |---|---|
-| HP Name(internal only) | **Insira um nome exclusivo. Salve o nome para usar depois!** |
+| HP Name(internal only) | **Insira um nome. Ex:Nerdio-TEAM#-HP** |
 | Description | Deixe em branco. |
-| Resource Group | Deixe como padrão. |
+| Resource Group | **Escolha o Resource Group conforme seu time. Ex: RG-AVD-TEAM#** |
 | Desktop Experience | **Multi user desktop (pooled)** |
 | Directory | Deixe como padrão. |
-| FSLogix | Deixe como padrão. |
+| FSLogix | **Deixe como OFF.** |
 | RDP Profile | Deixe como padrão. |
-| Name | **Insira um nome.** |
-| Network | Deixe como padrão. |
-| Desktop Image | **Windows 11 (23H2) AVD + Microsoft 365 Apps - Gen2 (multi-session)** |
-| VM Size | **D2s_v5** |
+| Name | **Insira o prefixo do nome para VM. EX:VMN-T#** |
+| Network |**Escolha a VNET conforme seu time. Ex: VNET-AVD-TEAM#** |
+| Desktop Image | **Windows 11 (24H2) AVD + Microsoft 365 Apps - Gen2 (multi-session)** |
+| VM Size | **D2as_v5** |
 | OS Disk | Deixe como padrão (E10) |
-| Resource Group | Deixe como padrão. |
+| Resource Group | **Escolha o Resource Group conforme seu time. Ex: RG-AVD-TEAM#** |
 | Quick-Assign | Deixe em branco. |
+
+**Nota: Lembre-se de trocar o # pelo número do seu time no desafio**
 
 ![Host Pool Dinâmico](../Images/Nerdio/DynamicHostPool.png)
 
