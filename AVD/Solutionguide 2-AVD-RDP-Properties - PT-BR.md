@@ -15,7 +15,7 @@
 
 ## Etapa 1 - Configurar as propriedades RDP do Hostpool do AVD 
 
-### Opção 1 via Portal do Azure
+### Opção 1 via Portal do Azure (Recomendado)
 
 No pooled / multi-session Host pool (RemoteApp), navegue até **Propriedades RDP**.
 
@@ -52,7 +52,7 @@ Em seguida, configure as seguintes propriedades RDP.
 
 Em seguida, clique em **Save**.
  
-### Opção 2 via Powershell
+### Opção 2 via Powershell (Somente se preferir fazer via powershell, senão só executar pelo portal)
 
 Para adicionar ou editar várias propriedades RDP personalizadas, execute os seguintes cmdlets do PowerShell fornecendo as propriedades RDP personalizadas como uma cadeia de caracteres separada por ponto-e-vírgula:
 
