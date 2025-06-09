@@ -14,7 +14,7 @@
 | Resource Group | **Escolha o Resource Group conforme seu time. Ex: RG-AVD-TEAM#** |
 | Location | **Selecione East US.** |
 
-**Nota: Lembre-se de trocar o # pelo número do seu time no desafio**
+**Atenção: Lembre-se de trocar o # pelo número do seu time no desafio**
 
 ![Criar Workspace](../Images/Nerdio/CreateWorkspace.png)
 
@@ -36,7 +36,7 @@
 | Directory | Deixe como padrão. |
 | FSLogix | **Deixe como OFF.** |
 | RDP Profile | Deixe como padrão. |
-| Name | **Insira o prefixo do nome para VM. EX:VMN-T#** |
+| Name | **Insira o prefixo do nome para VM. Ex:VMN-T#** |
 | Network |**Escolha a VNET conforme seu time. Ex: VNET-AVD-TEAM#** |
 | Desktop Image | **Windows 11 (24H2) AVD + Microsoft 365 Apps - Gen2 (multi-session)** |
 | VM Size | **D2as_v5** |
@@ -44,7 +44,7 @@
 | Resource Group | **Escolha o Resource Group conforme seu time. Ex: RG-AVD-TEAM#** |
 | Quick-Assign | Deixe em branco. |
 
-**Nota: Lembre-se de trocar o # pelo número do seu time no desafio**
+**Atenção: Lembre-se de trocar o # pelo número do seu time no desafio**
 
 ![Host Pool Dinâmico](../Images/Nerdio/DynamicHostPool.png)
 
@@ -64,7 +64,7 @@
 | Propriedade | Valor |
 |---|---|
 | Host Count | **2** |
-| Host Name | **Insira um nome.** |
+| Host Name | **Insira um nome. Ex:VMN-T#** |
 | Network | Deixe como padrão. |
 | Desktop Image | Deixe como padrão. |
 | VM Size | Deixe como padrão. |
@@ -74,6 +74,8 @@
 | Number of failures before Abort | **5** |
 
 ![Host para Pool Dinâmico](../Images/Nerdio/HostToDynamicPool.png)
+
+**Atenção: Lembre-se de trocar o # pelo número do seu time no desafio**
 
 **Nota:**  
 - Se o dimensionamento automático estiver ativado, o host recém-adicionado pode ser excluído ou parado.  
