@@ -38,7 +38,7 @@
 | Directory | Deixe como padrão. |
 | FSLogix | **Deixe como OFF.** |
 | RDP Profile | Deixe como padrão. |
-| Name | **Insira o prefixo do nome para VM. Ex:VMN-T#** |
+| Name | **Insira o prefixo do nome para VM. Ex: VMN-T#** |
 | Network |**Escolha a VNET conforme seu time. Ex: VNET-AVD-TEAM#** |
 | Desktop Image | **Windows 11 (24H2) AVD + Microsoft 365 Apps - Gen2 (multi-session)** |
 | VM Size | **D2as_v5** |
