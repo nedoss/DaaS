@@ -44,7 +44,7 @@
 | VM Size | **D2as_v5** |
 | OS Disk | Deixe como padrão (E10) |
 | Resource Group | **Escolha o Resource Group conforme seu time. Ex: RG-AVD-TEAM#** |
-| Quick-Assign | Deixe em branco. |
+| Quick-Assign | **Escolha o grupo de usuários do seu time. Ex: GRP-T#-Users** |
 
 **Atenção: Lembre-se de trocar o # pelo número do seu time no desafio**
 
