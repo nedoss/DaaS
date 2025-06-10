@@ -5,12 +5,12 @@
 ### Laboratório 1 - Criando um workspace AVD
 
 1. Clique na guia **Workspaces**  
-2. Clique em Novo Workspace.  
+2. Clique em **Add Workspace**  
 3. Configure conforme abaixo:
 
 | Propriedade | Valor |
 |---|---|
-| Name(internal only) | **Insira um nome. Ex: WS-Nerdio=TEAM#** |
+| Name(internal only) | **Insira um nome. Ex: WS-Nerdio-TEAM#** |
 | Friendly Name (visible to users) | **Insira um nome. Ex: Nerdio-Team#-Workspace** |
 | Description | Deixe em branco. |
 | Resource Group | **Escolha o Resource Group conforme seu time. Ex: RG-AVD-TEAM#** |
